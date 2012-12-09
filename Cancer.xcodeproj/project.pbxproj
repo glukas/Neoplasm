@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815BECC81674C87C003A0B51 /* CRCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 815BECC71674C87C003A0B51 /* CRCell.m */; };
+		815BECC91674C87C003A0B51 /* CRCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 815BECC71674C87C003A0B51 /* CRCell.m */; };
+		815BECCC1674C97B003A0B51 /* CRPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 815BECCB1674C97B003A0B51 /* CRPulse.m */; };
+		815BECCD1674C97B003A0B51 /* CRPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 815BECCB1674C97B003A0B51 /* CRPulse.m */; };
 		818503771674AFA20021295D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503761674AFA20021295D /* UIKit.framework */; };
 		818503791674AFA20021295D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503781674AFA20021295D /* Foundation.framework */; };
 		8185037B1674AFA20021295D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8185037A1674AFA20021295D /* CoreGraphics.framework */; };
@@ -21,6 +25,20 @@
 		818503971674AFA30021295D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503781674AFA20021295D /* Foundation.framework */; };
 		8185039F1674AFA30021295D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8185039D1674AFA30021295D /* InfoPlist.strings */; };
 		818503A21674AFA30021295D /* CancerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503A11674AFA30021295D /* CancerTests.m */; };
+		818503AC1674AFCA0021295D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503AB1674AFCA0021295D /* GLKit.framework */; };
+		818503AE1674AFD00021295D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503AD1674AFD00021295D /* OpenGLES.framework */; };
+		818503B11674B0070021295D /* CRNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503B01674B0070021295D /* CRNode.m */; };
+		818503B21674B0070021295D /* CRNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503B01674B0070021295D /* CRNode.m */; };
+		818503B51674B0190021295D /* CRSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503B41674B0190021295D /* CRSprite.m */; };
+		818503B61674B0190021295D /* CRSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503B41674B0190021295D /* CRSprite.m */; };
+		818503B91674B0350021295D /* CRScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503B81674B0350021295D /* CRScene.m */; };
+		818503BA1674B0350021295D /* CRScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503B81674B0350021295D /* CRScene.m */; };
+		818503BD1674B0630021295D /* CRGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503BC1674B0630021295D /* CRGameScene.m */; };
+		818503BE1674B0630021295D /* CRGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503BC1674B0630021295D /* CRGameScene.m */; };
+		818503C11674B0CB0021295D /* CRGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503C01674B0CB0021295D /* CRGameViewController.m */; };
+		818503C21674B0CB0021295D /* CRGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503C01674B0CB0021295D /* CRGameViewController.m */; };
+		818503C51674B1320021295D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818503C41674B1320021295D /* MainStoryboard.storyboard */; };
+		818503C61674B1320021295D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818503C41674B1320021295D /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		815BECC61674C87C003A0B51 /* CRCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCell.h; sourceTree = "<group>"; };
+		815BECC71674C87C003A0B51 /* CRCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCell.m; sourceTree = "<group>"; };
+		815BECCA1674C97B003A0B51 /* CRPulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPulse.h; sourceTree = "<group>"; };
+		815BECCB1674C97B003A0B51 /* CRPulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPulse.m; sourceTree = "<group>"; };
 		818503721674AFA20021295D /* Cancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818503761674AFA20021295D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		818503781674AFA20021295D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +75,20 @@
 		8185039E1674AFA30021295D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		818503A01674AFA30021295D /* CancerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancerTests.h; sourceTree = "<group>"; };
 		818503A11674AFA30021295D /* CancerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancerTests.m; sourceTree = "<group>"; };
+		818503AB1674AFCA0021295D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		818503AD1674AFD00021295D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		818503AF1674B0070021295D /* CRNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNode.h; sourceTree = "<group>"; };
+		818503B01674B0070021295D /* CRNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNode.m; sourceTree = "<group>"; };
+		818503B31674B0190021295D /* CRSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSprite.h; sourceTree = "<group>"; };
+		818503B41674B0190021295D /* CRSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSprite.m; sourceTree = "<group>"; };
+		818503B71674B0350021295D /* CRScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRScene.h; sourceTree = "<group>"; };
+		818503B81674B0350021295D /* CRScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRScene.m; sourceTree = "<group>"; };
+		818503BB1674B0630021295D /* CRGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGameScene.h; sourceTree = "<group>"; };
+		818503BC1674B0630021295D /* CRGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGameScene.m; sourceTree = "<group>"; };
+		818503BF1674B0CB0021295D /* CRGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGameViewController.h; sourceTree = "<group>"; };
+		818503C01674B0CB0021295D /* CRGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGameViewController.m; sourceTree = "<group>"; };
+		818503C41674B1320021295D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		818503C71674B9EC0021295D /* CRGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRGeometry.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818503AE1674AFD00021295D /* OpenGLES.framework in Frameworks */,
+				818503AC1674AFCA0021295D /* GLKit.framework in Frameworks */,
 				818503771674AFA20021295D /* UIKit.framework in Frameworks */,
 				818503791674AFA20021295D /* Foundation.framework in Frameworks */,
 				8185037B1674AFA20021295D /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +139,8 @@
 		818503751674AFA20021295D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				818503AD1674AFD00021295D /* OpenGLES.framework */,
+				818503AB1674AFCA0021295D /* GLKit.framework */,
 				818503761674AFA20021295D /* UIKit.framework */,
 				818503781674AFA20021295D /* Foundation.framework */,
 				8185037A1674AFA20021295D /* CoreGraphics.framework */,
@@ -112,8 +152,12 @@
 		8185037C1674AFA20021295D /* Cancer */ = {
 			isa = PBXGroup;
 			children = (
-				818503851674AFA30021295D /* CRAppDelegate.h */,
-				818503861674AFA30021295D /* CRAppDelegate.m */,
+				818503C31674B0FE0021295D /* Nodes */,
+				818503BF1674B0CB0021295D /* CRGameViewController.h */,
+				818503C01674B0CB0021295D /* CRGameViewController.m */,
+				815BECCA1674C97B003A0B51 /* CRPulse.h */,
+				815BECCB1674C97B003A0B51 /* CRPulse.m */,
+				818503C41674B1320021295D /* MainStoryboard.storyboard */,
 				8185037D1674AFA20021295D /* Supporting Files */,
 			);
 			path = Cancer;
@@ -122,6 +166,8 @@
 		8185037D1674AFA20021295D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				818503851674AFA30021295D /* CRAppDelegate.h */,
+				818503861674AFA30021295D /* CRAppDelegate.m */,
 				8185037E1674AFA20021295D /* Cancer-Info.plist */,
 				8185037F1674AFA20021295D /* InfoPlist.strings */,
 				818503821674AFA20021295D /* main.m */,
@@ -150,6 +196,24 @@
 				8185039D1674AFA30021295D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		818503C31674B0FE0021295D /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				818503AF1674B0070021295D /* CRNode.h */,
+				818503B01674B0070021295D /* CRNode.m */,
+				815BECC61674C87C003A0B51 /* CRCell.h */,
+				815BECC71674C87C003A0B51 /* CRCell.m */,
+				818503B31674B0190021295D /* CRSprite.h */,
+				818503B41674B0190021295D /* CRSprite.m */,
+				818503C71674B9EC0021295D /* CRGeometry.h */,
+				818503B71674B0350021295D /* CRScene.h */,
+				818503B81674B0350021295D /* CRScene.m */,
+				818503BB1674B0630021295D /* CRGameScene.h */,
+				818503BC1674B0630021295D /* CRGameScene.m */,
+			);
+			name = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +292,7 @@
 				818503891674AFA30021295D /* Default.png in Resources */,
 				8185038B1674AFA30021295D /* Default@2x.png in Resources */,
 				8185038D1674AFA30021295D /* Default-568h@2x.png in Resources */,
+				818503C51674B1320021295D /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8185039F1674AFA30021295D /* InfoPlist.strings in Resources */,
+				818503C61674B1320021295D /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +330,13 @@
 			files = (
 				818503831674AFA20021295D /* main.m in Sources */,
 				818503871674AFA30021295D /* CRAppDelegate.m in Sources */,
+				818503B11674B0070021295D /* CRNode.m in Sources */,
+				818503B51674B0190021295D /* CRSprite.m in Sources */,
+				818503B91674B0350021295D /* CRScene.m in Sources */,
+				818503BD1674B0630021295D /* CRGameScene.m in Sources */,
+				818503C11674B0CB0021295D /* CRGameViewController.m in Sources */,
+				815BECC81674C87C003A0B51 /* CRCell.m in Sources */,
+				815BECCC1674C97B003A0B51 /* CRPulse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +345,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				818503A21674AFA30021295D /* CancerTests.m in Sources */,
+				818503B21674B0070021295D /* CRNode.m in Sources */,
+				818503B61674B0190021295D /* CRSprite.m in Sources */,
+				818503BA1674B0350021295D /* CRScene.m in Sources */,
+				818503BE1674B0630021295D /* CRGameScene.m in Sources */,
+				818503C21674B0CB0021295D /* CRGameViewController.m in Sources */,
+				815BECC91674C87C003A0B51 /* CRCell.m in Sources */,
+				815BECCD1674C97B003A0B51 /* CRPulse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +510,7 @@
 				818503A71674AFA30021295D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		818503A81674AFA30021295D /* Build configuration list for PBXNativeTarget "CancerTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +519,7 @@
 				818503AA1674AFA30021295D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
