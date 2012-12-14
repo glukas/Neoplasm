@@ -7,6 +7,7 @@
 //
 
 #import "CRNeoplasm.h"
+#import "CRVessel.h"
 
 @interface  CRNeoplasm()
 @property (nonatomic, strong) GLKBaseEffect * effect;
@@ -35,6 +36,14 @@
 - (void)newNeighborToCell:(CRCell *)cell atLoaction:(GLKVector2)location
 {
     [self addNewCellAtPoint:location];
+    CRVessel * vessel = [[CRVessel alloc] initWithEffect:self.effect];
+    
+    vessel.thickness = 30;
+    vessel.startPoint = cell.position;
+    vessel.endPoint = location;
+    
+    [self.children addObject:vessel];
+    
 }
 
 

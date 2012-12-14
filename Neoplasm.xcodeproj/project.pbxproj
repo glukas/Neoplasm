@@ -11,8 +11,8 @@
 		81687E4E167B30A7005EB1A8 /* CRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E27167B30A7005EB1A8 /* CRAppDelegate.m */; };
 		81687E4F167B30A7005EB1A8 /* CRCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E29167B30A7005EB1A8 /* CRCell.m */; };
 		81687E50167B30A7005EB1A8 /* CRCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E29167B30A7005EB1A8 /* CRCell.m */; };
-		81687E51167B30A7005EB1A8 /* CRConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E2B167B30A7005EB1A8 /* CRConnection.m */; };
-		81687E52167B30A7005EB1A8 /* CRConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E2B167B30A7005EB1A8 /* CRConnection.m */; };
+		81687E51167B30A7005EB1A8 /* CRVessel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E2B167B30A7005EB1A8 /* CRVessel.m */; };
+		81687E52167B30A7005EB1A8 /* CRVessel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E2B167B30A7005EB1A8 /* CRVessel.m */; };
 		81687E53167B30A7005EB1A8 /* CRFoodDistributionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E2D167B30A7005EB1A8 /* CRFoodDistributionCenter.m */; };
 		81687E54167B30A7005EB1A8 /* CRFoodDistributionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E2D167B30A7005EB1A8 /* CRFoodDistributionCenter.m */; };
 		81687E55167B30A7005EB1A8 /* CRFoodFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E2F167B30A7005EB1A8 /* CRFoodFlow.m */; };
@@ -47,6 +47,8 @@
 		81687E73167B30A7005EB1A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81687E4A167B30A7005EB1A8 /* MainStoryboard.storyboard */; };
 		81687E74167B30A7005EB1A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81687E4A167B30A7005EB1A8 /* MainStoryboard.storyboard */; };
 		81687E76167B30A7005EB1A8 /* Neoplasm-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81687E4B167B30A7005EB1A8 /* Neoplasm-Info.plist */; };
+		8172656B167B5B2D0054D34D /* CRRenderedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172656A167B5B2D0054D34D /* CRRenderedNode.m */; };
+		8172656C167B5B2D0054D34D /* CRRenderedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172656A167B5B2D0054D34D /* CRRenderedNode.m */; };
 		818503771674AFA20021295D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503761674AFA20021295D /* UIKit.framework */; };
 		818503791674AFA20021295D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503781674AFA20021295D /* Foundation.framework */; };
 		8185037B1674AFA20021295D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8185037A1674AFA20021295D /* CoreGraphics.framework */; };
@@ -72,8 +74,8 @@
 		81687E27167B30A7005EB1A8 /* CRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRAppDelegate.m; path = Neoplasm/CRAppDelegate.m; sourceTree = "<group>"; };
 		81687E28167B30A7005EB1A8 /* CRCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRCell.h; path = Neoplasm/CRCell.h; sourceTree = "<group>"; };
 		81687E29167B30A7005EB1A8 /* CRCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRCell.m; path = Neoplasm/CRCell.m; sourceTree = "<group>"; };
-		81687E2A167B30A7005EB1A8 /* CRConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRConnection.h; path = Neoplasm/CRConnection.h; sourceTree = "<group>"; };
-		81687E2B167B30A7005EB1A8 /* CRConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRConnection.m; path = Neoplasm/CRConnection.m; sourceTree = "<group>"; };
+		81687E2A167B30A7005EB1A8 /* CRVessel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRVessel.h; path = Neoplasm/CRVessel.h; sourceTree = "<group>"; };
+		81687E2B167B30A7005EB1A8 /* CRVessel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRVessel.m; path = Neoplasm/CRVessel.m; sourceTree = "<group>"; };
 		81687E2C167B30A7005EB1A8 /* CRFoodDistributionCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRFoodDistributionCenter.h; path = Neoplasm/CRFoodDistributionCenter.h; sourceTree = "<group>"; };
 		81687E2D167B30A7005EB1A8 /* CRFoodDistributionCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRFoodDistributionCenter.m; path = Neoplasm/CRFoodDistributionCenter.m; sourceTree = "<group>"; };
 		81687E2E167B30A7005EB1A8 /* CRFoodFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRFoodFlow.h; path = Neoplasm/CRFoodFlow.h; sourceTree = "<group>"; };
@@ -105,6 +107,8 @@
 		81687E4A167B30A7005EB1A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = Neoplasm/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		81687E4B167B30A7005EB1A8 /* Neoplasm-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Neoplasm-Info.plist"; path = "Neoplasm/Neoplasm-Info.plist"; sourceTree = "<group>"; };
 		81687E4C167B30A7005EB1A8 /* Neoplasm-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Neoplasm-Prefix.pch"; path = "Neoplasm/Neoplasm-Prefix.pch"; sourceTree = "<group>"; };
+		81726569167B5B2D0054D34D /* CRRenderedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRRenderedNode.h; path = Neoplasm/CRRenderedNode.h; sourceTree = "<group>"; };
+		8172656A167B5B2D0054D34D /* CRRenderedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRRenderedNode.m; path = Neoplasm/CRRenderedNode.m; sourceTree = "<group>"; };
 		818503721674AFA20021295D /* Neoplasm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neoplasm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818503761674AFA20021295D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		818503781674AFA20021295D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -171,12 +175,14 @@
 			children = (
 				81687E3B167B30A7005EB1A8 /* CRNode.h */,
 				81687E3C167B30A7005EB1A8 /* CRNode.m */,
+				81726569167B5B2D0054D34D /* CRRenderedNode.h */,
+				8172656A167B5B2D0054D34D /* CRRenderedNode.m */,
 				81687E41167B30A7005EB1A8 /* CRSprite.h */,
 				81687E42167B30A7005EB1A8 /* CRSprite.m */,
 				81687E28167B30A7005EB1A8 /* CRCell.h */,
 				81687E29167B30A7005EB1A8 /* CRCell.m */,
-				81687E2A167B30A7005EB1A8 /* CRConnection.h */,
-				81687E2B167B30A7005EB1A8 /* CRConnection.m */,
+				81687E2A167B30A7005EB1A8 /* CRVessel.h */,
+				81687E2B167B30A7005EB1A8 /* CRVessel.m */,
 				81687E39167B30A7005EB1A8 /* CRNeoplasm.h */,
 				81687E3A167B30A7005EB1A8 /* CRNeoplasm.m */,
 				81687E3F167B30A7005EB1A8 /* CRScene.h */,
@@ -358,7 +364,7 @@
 			files = (
 				81687E4D167B30A7005EB1A8 /* CRAppDelegate.m in Sources */,
 				81687E4F167B30A7005EB1A8 /* CRCell.m in Sources */,
-				81687E51167B30A7005EB1A8 /* CRConnection.m in Sources */,
+				81687E51167B30A7005EB1A8 /* CRVessel.m in Sources */,
 				81687E53167B30A7005EB1A8 /* CRFoodDistributionCenter.m in Sources */,
 				81687E55167B30A7005EB1A8 /* CRFoodFlow.m in Sources */,
 				81687E57167B30A7005EB1A8 /* CRFoodSource.m in Sources */,
@@ -371,6 +377,7 @@
 				81687E65167B30A7005EB1A8 /* CRScene.m in Sources */,
 				81687E67167B30A7005EB1A8 /* CRSprite.m in Sources */,
 				81687E71167B30A7005EB1A8 /* main.m in Sources */,
+				8172656B167B5B2D0054D34D /* CRRenderedNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +387,7 @@
 			files = (
 				81687E4E167B30A7005EB1A8 /* CRAppDelegate.m in Sources */,
 				81687E50167B30A7005EB1A8 /* CRCell.m in Sources */,
-				81687E52167B30A7005EB1A8 /* CRConnection.m in Sources */,
+				81687E52167B30A7005EB1A8 /* CRVessel.m in Sources */,
 				81687E54167B30A7005EB1A8 /* CRFoodDistributionCenter.m in Sources */,
 				81687E56167B30A7005EB1A8 /* CRFoodFlow.m in Sources */,
 				81687E58167B30A7005EB1A8 /* CRFoodSource.m in Sources */,
@@ -393,6 +400,7 @@
 				81687E66167B30A7005EB1A8 /* CRScene.m in Sources */,
 				81687E68167B30A7005EB1A8 /* CRSprite.m in Sources */,
 				81687E72167B30A7005EB1A8 /* main.m in Sources */,
+				8172656C167B5B2D0054D34D /* CRRenderedNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

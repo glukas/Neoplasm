@@ -28,4 +28,16 @@ typedef struct {
 } TexturedQuad;
 
 
+typedef struct {
+    CGPoint spaceCoordinate;
+    float Color[4];
+} ColoredVertex;
+
+typedef struct {
+    ColoredVertex bl; //bottom left
+    ColoredVertex br; //bottom right
+    ColoredVertex tl;  //top left
+    ColoredVertex tr;  //top right
+} ColoredQuad;
+
 #endif

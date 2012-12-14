@@ -12,9 +12,9 @@
 @interface CRSprite()
 
 //the effect provides simple rendering similar to opengl es 1
-@property (strong) GLKBaseEffect * effect;
+@property (nonatomic, strong) GLKBaseEffect * effect;
 @property (assign) TexturedQuad quad;
-@property (strong) GLKTextureInfo * textureInfo;
+@property (nonatomic, strong) GLKTextureInfo * textureInfo;
 
 @end
 

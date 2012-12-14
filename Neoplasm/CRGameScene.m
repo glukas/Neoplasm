@@ -251,6 +251,7 @@ float _scaleForNextUpdate;
         if (self.scale < _minScale) {
             self.scale = _minScale;
         }
+        //we want the scale to be relative to the last update
         [gesture setScale:1.0];
     }
 }

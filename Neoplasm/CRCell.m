@@ -53,6 +53,7 @@
 
 
 
+
 #pragma mark network structure
 
 - (void)addNeighbor:(CRCell*)cell
@@ -68,7 +69,7 @@
 }
 
 
-- (void)enumerateNeighboursUsingBlock:(void (^)(id obj, BOOL *stop))block
+- (void)enumerateNeighborsUsingBlock:(void (^)(id obj, BOOL *stop))block
 {
     [self.neighbors enumerateObjectsUsingBlock:block];
 }
