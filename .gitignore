@@ -14,4 +14,6 @@ build/
 *.xcuserstate
 xcuserdata
 
+
 Neoplasm.xcodeproj/project.xcworkspace/xcuserdata/nicki.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcworkspacedata
