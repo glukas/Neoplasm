@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CRFoodSource.h"
+#import "CRFood.h"
 
 @interface CRFoodDistributionCenter : NSObject
 
@@ -18,6 +19,6 @@
 
 - (void)addFoodSource:(CRFoodSource*)source;
 
-- (CRFoodSourceCapacity*)foodForCellSinceLastUpdate:(CRCell*)cell;
+- (CRFood*)foodForCell:(CRCell*)cell;
 
 @end

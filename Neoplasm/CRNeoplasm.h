@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 Lukas Gianinazzi. All rights reserved.
 //
 
-#import "CRNode.h"
+#import "CRRenderedNode.h"
 #import "CRCell.h"
 
-@interface CRNeoplasm : CRNode
+@interface CRNeoplasm : CRRenderedNode <CRCellDelegate>
 
 + (CRNeoplasm *)neoplasmWithEffect:(GLKBaseEffect*)effect initialCellAtPoint:(GLKVector2)location;
 

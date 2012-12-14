@@ -8,9 +8,28 @@
 
 #import "CRFoodDistributionCenter.h"
 
+@interface CRFoodDistributionCenter()
+@property (nonatomic) float time;
+@end
+
 @implementation CRFoodDistributionCenter
 
 
+
+- (void)update:(float)timeSinceLastUpdate
+{
+    self.time += timeSinceLastUpdate;
+}
+
+- (void)addFoodSource:(CRFoodSource *)source
+{
+    
+}
+
+- (CRFood *)foodForCell:(CRCell *)cell
+{
+    return [CRFood foodWithAmount:0.2*self.time];
+}
 
 
 @end

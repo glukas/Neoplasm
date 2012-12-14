@@ -8,16 +8,24 @@
 
 #import "CRNeoplasm.h"
 #import "CRVessel.h"
+#import "CRFoodDistributionCenter.h"
 
 #define DEFAULT_VESSEL_THICKNESS 30
 #define SIZE_OF_BOX_FOR_HIT_DETECTION 35
 
 @interface  CRNeoplasm()
-@property (nonatomic, strong) GLKBaseEffect * effect;
 @property (nonatomic, strong) NSMutableSet * cells;
+@property (nonatomic, strong) CRFoodDistributionCenter * foodDistributionCenter;
 @end
 
 @implementation CRNeoplasm
+
+- (CRFoodDistributionCenter *)foodDistributionCenter
+{
+    if (!_foodDistributionCenter) {
+        _foodDistributionCenter = [[CRFoodDistributionCenter alloc] init];
+    } return _foodDistributionCenter;
+}
 
 - (NSMutableSet*)cells
 {
@@ -28,8 +36,7 @@
 
 + (CRNeoplasm*)neoplasmWithEffect:(GLKBaseEffect *)effect initialCellAtPoint:(GLKVector2)location
 {
-    CRNeoplasm * plasm = [[CRNeoplasm alloc] init];
-    plasm.effect = effect;
+    CRNeoplasm * plasm = [[CRNeoplasm alloc] initWithEffect:effect];
     [plasm addNewCellAtPoint:location];
     
     return plasm;
@@ -39,9 +46,9 @@
 - (void)newNeighborToCell:(CRCell *)cell atLoaction:(GLKVector2)location
 {
     CRCell * newCell = [self addNewCellAtPoint:location];
-    
-    [self newVesselBetweenCell:cell andOtherCell:newCell];
-    
+    if (cell) {
+        [self newVesselBetweenCell:cell andOtherCell:newCell];
+    }
 }
 
 - (void)newVesselBetweenCell:(CRCell *)cell1 andOtherCell:(CRCell *)cell2
@@ -60,7 +67,8 @@
 - (CRCell*)addNewCellAtPoint:(GLKVector2)location
 {
     CRCell * cell = [CRCell cellWithEffect:self.effect];
-        
+    
+    cell.delegate = self;
     cell.position = location;
     cell.pulsate = YES;
     
@@ -78,11 +86,7 @@
     __block CGRect box;
     __block CRCell * result;
     
-    /*
-    for (CRCell * cell in self.cells) {
-        
-    }*/
-    
+    //test for collision
     [self.cells enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
         CRCell * cell = obj;
         box = cell.boundingBox;
@@ -94,6 +98,18 @@
     }];
     
     return result;
+}
+
+
+- (CRFood*)foodForCell:(CRCell *)cell
+{
+    return [self.foodDistributionCenter foodForCell:cell];
+}
+
+- (void)update:(float)timeSinceLastUpdate
+{
+    [self.foodDistributionCenter update:timeSinceLastUpdate];
+    [super update:timeSinceLastUpdate];
 }
 
 @end

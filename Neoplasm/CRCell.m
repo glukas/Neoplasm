@@ -88,6 +88,9 @@
         [self.pulse update:timeSinceLastUpdate];
     }
     
+    
+    CRFood * food = [self.delegate foodForCell:self];
+    
     //todo: determine surplus/shortage if food (ask parent)
     //...
     
@@ -95,7 +98,7 @@
     //todo: set pulse rate to reflect rate of consumption
     
     //pulse
-    self.scale = 0.5+0.5*self.pulse.pulse;
+    self.scale = food.amount*(0.5+0.5*self.pulse.pulse);
 }
 
 

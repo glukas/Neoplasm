@@ -7,6 +7,14 @@
 //
 
 #import "CRSprite.h"
+#import "CRFood.h"
+
+@class CRCell;
+
+@protocol CRCellDelegate <NSObject>
+- (CRFood*)foodForCell:(CRCell*)cell;
+@end
+
 
 @interface CRCell : CRSprite
 
@@ -19,7 +27,11 @@
 @property (nonatomic) BOOL pulsate;
 
 @property (readonly) BOOL isStarving;
-  
+
+#pragma mark delegate
+
+@property (nonatomic, weak) id <CRCellDelegate> delegate;
+
 #pragma mark connections to other cells
 
 - (void)addNeighbor:(CRCell*)cell;
