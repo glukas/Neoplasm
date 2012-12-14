@@ -10,7 +10,7 @@
 #import "CRCell.h"
 #import "CRPulse.h"
 
-#define MIN_DURATION_FOR_NODE_CREATION 0.25
+#define MIN_DURATION_FOR_NODE_CREATION 0.17
 
 float _minScale = 0.1;
 
@@ -72,6 +72,8 @@ float _scaleForNextUpdate;
 
 #pragma mark gestures
 
+//lazy instanciation...
+
 - (UITapGestureRecognizer*)tapGesture
 {
     if (!_tapGesture) {
@@ -108,17 +110,23 @@ float _scaleForNextUpdate;
     [super setUserInteractionDisabled:userInteractionDisabled];
     
     if (userInteractionDisabled) {
-        [self.tapGesture removeTarget:self action:@selector(handleTap:)];
-        [self.panGesture removeTarget:self action:@selector(panGesture:)];
-        [self.pinchGesture removeTarget:self action:@selector(handlePinch:)];
-        [self.pressGesture removeTarget:self action:@selector(handlePress:)];
+        [self setGesturesEnabled:NO];
         [self.view removeGestureRecognizer:self.tapGesture];
         [self.view removeGestureRecognizer:self.panGesture];
         [self.view removeGestureRecognizer:self.pinchGesture];
         [self.view removeGestureRecognizer:self.pressGesture];
     } else {
         [self setupGestures];
+        [self setGesturesEnabled:YES];
     }
+}
+
+- (void)setGesturesEnabled:(BOOL)enabled
+{
+    self.tapGesture.enabled = enabled;
+    self.panGesture.enabled = enabled;
+    self.pinchGesture.enabled = enabled;
+    self.pressGesture.enabled = enabled;
 }
 
 - (void)setupGestures
@@ -128,6 +136,10 @@ float _scaleForNextUpdate;
     [self.view addGestureRecognizer:self.pinchGesture];
     [self.view addGestureRecognizer:self.pressGesture];
 }
+
+//actual handling:
+
+
 
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer
 {
@@ -206,13 +218,15 @@ float _scaleForNextUpdate;
     //}
 }
 
+//press is activated after Min_duration_for_node_creation
 - (void)handlePress:(UILongPressGestureRecognizer*)recognizer
 {
+    //get the location of the touch both in screen and world coordinates
     CGPoint touchLocation = [recognizer locationInView:recognizer.view];
-    
     GLKVector2 glvector = [self toGLVectorFromMainView:touchLocation];
+    
     if (recognizer.state == UIGestureRecognizerStateBegan) {
-        
+        //if the user presses a cell, start creating a new child cell
         CRCell * cell = [self.neoplasm cellAtPoint:glvector];
         if (cell) {
             cell.pulsate = NO;
@@ -220,8 +234,8 @@ float _scaleForNextUpdate;
         }
         
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {
+        //for the moment, just always assume that the user doesn't want to cancel the operation
         if (self.userIsCreatingANewCell) {
-
             [self.neoplasm newNeighborToCell:self.activeCell atLoaction:glvector];
             self.activeCell.pulsate = YES;
             self.activeCell = nil;
@@ -234,6 +248,9 @@ float _scaleForNextUpdate;
     if (gesture.state == UIGestureRecognizerStateChanged) {
         
         self.scale = self.scale *= gesture.scale;
+        if (self.scale < _minScale) {
+            self.scale = _minScale;
+        }
         [gesture setScale:1.0];
     }
 }
