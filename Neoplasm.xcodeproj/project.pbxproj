@@ -41,13 +41,11 @@
 		81687E6C167B30A7005EB1A8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81687E44167B30A7005EB1A8 /* Default.png */; };
 		81687E6D167B30A7005EB1A8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81687E45167B30A7005EB1A8 /* Default@2x.png */; };
 		81687E6E167B30A7005EB1A8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81687E45167B30A7005EB1A8 /* Default@2x.png */; };
-		81687E6F167B30A7005EB1A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81687E47167B30A7005EB1A8 /* InfoPlist.strings */; };
 		81687E70167B30A7005EB1A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81687E47167B30A7005EB1A8 /* InfoPlist.strings */; };
 		81687E71167B30A7005EB1A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E49167B30A7005EB1A8 /* main.m */; };
 		81687E72167B30A7005EB1A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81687E49167B30A7005EB1A8 /* main.m */; };
 		81687E73167B30A7005EB1A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81687E4A167B30A7005EB1A8 /* MainStoryboard.storyboard */; };
 		81687E74167B30A7005EB1A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81687E4A167B30A7005EB1A8 /* MainStoryboard.storyboard */; };
-		81687E75167B30A7005EB1A8 /* Neoplasm-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81687E4B167B30A7005EB1A8 /* Neoplasm-Info.plist */; };
 		81687E76167B30A7005EB1A8 /* Neoplasm-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81687E4B167B30A7005EB1A8 /* Neoplasm-Info.plist */; };
 		818503771674AFA20021295D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503761674AFA20021295D /* UIKit.framework */; };
 		818503791674AFA20021295D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503781674AFA20021295D /* Foundation.framework */; };
@@ -318,9 +316,7 @@
 				81687E69167B30A7005EB1A8 /* Default-568h@2x.png in Resources */,
 				81687E6B167B30A7005EB1A8 /* Default.png in Resources */,
 				81687E6D167B30A7005EB1A8 /* Default@2x.png in Resources */,
-				81687E6F167B30A7005EB1A8 /* InfoPlist.strings in Resources */,
 				81687E73167B30A7005EB1A8 /* MainStoryboard.storyboard in Resources */,
-				81687E75167B30A7005EB1A8 /* Neoplasm-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,8 +472,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cancer/Neoplasm-Prefix.pch";
-				INFOPLIST_FILE = "Cancer/Neoplasm-Info.plist";
+				GCC_PREFIX_HEADER = "Neoplasm/Neoplasm-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Neoplasm/Neoplasm-Info.plist";
 				PRODUCT_NAME = Neoplasm;
 				WRAPPER_EXTENSION = app;
 			};
@@ -487,8 +483,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cancer/Neoplasm-Prefix.pch";
-				INFOPLIST_FILE = "Cancer/Neoplasm-Info.plist";
+				GCC_PREFIX_HEADER = "Neoplasm/Neoplasm-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Neoplasm/Neoplasm-Info.plist";
 				PRODUCT_NAME = Neoplasm;
 				WRAPPER_EXTENSION = app;
 			};

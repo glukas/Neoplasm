@@ -19,7 +19,7 @@
 @property (nonatomic) BOOL pulsate;
 
 @property (readonly) BOOL isStarving;
-
+  
 #pragma mark connections to other cells
 
 - (void)addNeighbor:(CRCell*)cell;

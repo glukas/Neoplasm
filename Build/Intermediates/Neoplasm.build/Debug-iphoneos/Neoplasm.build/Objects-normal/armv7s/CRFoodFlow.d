@@ -1,8 +1,8 @@
 dependencies: \
-  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Cancer/Cancer/Cancer/CRFoodFlow.m \
-  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Cancer/Cancer/Cancer/CRFoodFlow.h \
-  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Cancer/Cancer/Cancer/CRFoodSource.h \
-  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.h \
-  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Cancer/Cancer/Cancer/CRNode.h \
-  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Cancer/Cancer/Cancer/CRCell.h \
-  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Cancer/Cancer/Cancer/CRFoodSourceCapacity.h
+  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Neoplasm/Neoplasm/Neoplasm/CRFoodFlow.m \
+  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Neoplasm/Neoplasm/Neoplasm/CRFoodFlow.h \
+  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Neoplasm/Neoplasm/Neoplasm/CRFoodSource.h \
+  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Neoplasm/Neoplasm/Neoplasm/CRSprite.h \
+  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Neoplasm/Neoplasm/Neoplasm/CRNode.h \
+  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Neoplasm/Neoplasm/Neoplasm/CRCell.h \
+  /Users/nicki/Desktop/ETH/Einfuhrung_in_die_Programmierung/Final/Neoplasm/Neoplasm/Neoplasm/CRFoodSourceCapacity.h
