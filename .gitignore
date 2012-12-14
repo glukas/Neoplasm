@@ -17,3 +17,11 @@ xcuserdata
 
 Neoplasm.xcodeproj/project.xcworkspace/xcuserdata/nicki.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcworkspacedata
+
+*.xcbkptlist
+
+Build/Products/Debug-iphoneos/Neoplasm.app.dSYM/Contents/Resources/DWARF/Neoplasm
+
+*.dat
+
+*.dep
