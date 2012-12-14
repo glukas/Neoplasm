@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8117C50516769605000128DC /* CRFoodSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117C50416769605000128DC /* CRFoodSource.m */; };
+		8117C50616769605000128DC /* CRFoodSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117C50416769605000128DC /* CRFoodSource.m */; };
+		8117C50A16769764000128DC /* CRFoodSourceCapacity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117C50916769763000128DC /* CRFoodSourceCapacity.m */; };
+		8117C50B16769764000128DC /* CRFoodSourceCapacity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117C50916769763000128DC /* CRFoodSourceCapacity.m */; };
+		8117C50E167697AA000128DC /* CRFoodFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117C50D167697AA000128DC /* CRFoodFlow.m */; };
+		8117C50F167697AA000128DC /* CRFoodFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117C50D167697AA000128DC /* CRFoodFlow.m */; };
+		8117C51216769BE6000128DC /* CRFoodDistributionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117C51116769BE6000128DC /* CRFoodDistributionCenter.m */; };
+		8117C51316769BE6000128DC /* CRFoodDistributionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117C51116769BE6000128DC /* CRFoodDistributionCenter.m */; };
+		8145526D1677ED6700EDE9E9 /* CRNeoplasm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145526C1677ED6700EDE9E9 /* CRNeoplasm.m */; };
+		8145526E1677ED6700EDE9E9 /* CRNeoplasm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8145526C1677ED6700EDE9E9 /* CRNeoplasm.m */; };
 		815BECC81674C87C003A0B51 /* CRCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 815BECC71674C87C003A0B51 /* CRCell.m */; };
 		815BECC91674C87C003A0B51 /* CRCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 815BECC71674C87C003A0B51 /* CRCell.m */; };
 		815BECCC1674C97B003A0B51 /* CRPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 815BECCB1674C97B003A0B51 /* CRPulse.m */; };
 		815BECCD1674C97B003A0B51 /* CRPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 815BECCB1674C97B003A0B51 /* CRPulse.m */; };
+		815BECCF1674D4F5003A0B51 /* cancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 815BECCE1674D4F5003A0B51 /* cancer.png */; };
+		815BECD01674D4F5003A0B51 /* cancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 815BECCE1674D4F5003A0B51 /* cancer.png */; };
 		818503771674AFA20021295D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503761674AFA20021295D /* UIKit.framework */; };
 		818503791674AFA20021295D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503781674AFA20021295D /* Foundation.framework */; };
 		8185037B1674AFA20021295D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8185037A1674AFA20021295D /* CoreGraphics.framework */; };
@@ -39,6 +51,8 @@
 		818503C21674B0CB0021295D /* CRGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818503C01674B0CB0021295D /* CRGameViewController.m */; };
 		818503C51674B1320021295D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818503C41674B1320021295D /* MainStoryboard.storyboard */; };
 		818503C61674B1320021295D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818503C41674B1320021295D /* MainStoryboard.storyboard */; };
+		81CB52691679115F005618FB /* CRConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB52681679115F005618FB /* CRConnection.m */; };
+		81CB526A1679115F005618FB /* CRConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB52681679115F005618FB /* CRConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,26 +66,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8117C50316769605000128DC /* CRFoodSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFoodSource.h; sourceTree = "<group>"; };
+		8117C50416769605000128DC /* CRFoodSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRFoodSource.m; sourceTree = "<group>"; };
+		8117C50816769763000128DC /* CRFoodSourceCapacity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFoodSourceCapacity.h; sourceTree = "<group>"; };
+		8117C50916769763000128DC /* CRFoodSourceCapacity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRFoodSourceCapacity.m; sourceTree = "<group>"; };
+		8117C50C167697AA000128DC /* CRFoodFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFoodFlow.h; sourceTree = "<group>"; };
+		8117C50D167697AA000128DC /* CRFoodFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRFoodFlow.m; sourceTree = "<group>"; };
+		8117C51016769BE6000128DC /* CRFoodDistributionCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFoodDistributionCenter.h; sourceTree = "<group>"; };
+		8117C51116769BE6000128DC /* CRFoodDistributionCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRFoodDistributionCenter.m; sourceTree = "<group>"; };
+		8145526B1677ED6700EDE9E9 /* CRNeoplasm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNeoplasm.h; sourceTree = "<group>"; };
+		8145526C1677ED6700EDE9E9 /* CRNeoplasm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNeoplasm.m; sourceTree = "<group>"; };
 		815BECC61674C87C003A0B51 /* CRCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCell.h; sourceTree = "<group>"; };
 		815BECC71674C87C003A0B51 /* CRCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCell.m; sourceTree = "<group>"; };
 		815BECCA1674C97B003A0B51 /* CRPulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPulse.h; sourceTree = "<group>"; };
 		815BECCB1674C97B003A0B51 /* CRPulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPulse.m; sourceTree = "<group>"; };
-		818503721674AFA20021295D /* Cancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		815BECCE1674D4F5003A0B51 /* cancer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cancer.png; path = ../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png; sourceTree = "<group>"; };
+		818503721674AFA20021295D /* Neoplasm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neoplasm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818503761674AFA20021295D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		818503781674AFA20021295D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8185037A1674AFA20021295D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8185037E1674AFA20021295D /* Cancer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cancer-Info.plist"; sourceTree = "<group>"; };
+		8185037E1674AFA20021295D /* Neoplasm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Neoplasm-Info.plist"; sourceTree = "<group>"; };
 		818503801674AFA20021295D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		818503821674AFA20021295D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		818503841674AFA20021295D /* Cancer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cancer-Prefix.pch"; sourceTree = "<group>"; };
+		818503841674AFA20021295D /* Neoplasm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Neoplasm-Prefix.pch"; sourceTree = "<group>"; };
 		818503851674AFA30021295D /* CRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAppDelegate.h; sourceTree = "<group>"; };
 		818503861674AFA30021295D /* CRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAppDelegate.m; sourceTree = "<group>"; };
 		818503881674AFA30021295D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8185038A1674AFA30021295D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8185038C1674AFA30021295D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		818503931674AFA30021295D /* CancerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CancerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		818503931674AFA30021295D /* NeoplasmTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoplasmTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		818503941674AFA30021295D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		8185039C1674AFA30021295D /* CancerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CancerTests-Info.plist"; sourceTree = "<group>"; };
+		8185039C1674AFA30021295D /* NeoplasmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NeoplasmTests-Info.plist"; sourceTree = "<group>"; };
 		8185039E1674AFA30021295D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		818503A01674AFA30021295D /* CancerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancerTests.h; sourceTree = "<group>"; };
 		818503A11674AFA30021295D /* CancerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancerTests.m; sourceTree = "<group>"; };
@@ -89,6 +114,8 @@
 		818503C01674B0CB0021295D /* CRGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGameViewController.m; sourceTree = "<group>"; };
 		818503C41674B1320021295D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		818503C71674B9EC0021295D /* CRGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRGeometry.h; sourceTree = "<group>"; };
+		81CB52671679115F005618FB /* CRConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRConnection.h; sourceTree = "<group>"; };
+		81CB52681679115F005618FB /* CRConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +157,8 @@
 		818503731674AFA20021295D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				818503721674AFA20021295D /* Cancer.app */,
-				818503931674AFA30021295D /* CancerTests.octest */,
+				818503721674AFA20021295D /* Neoplasm.app */,
+				818503931674AFA30021295D /* NeoplasmTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,8 +182,15 @@
 				818503C31674B0FE0021295D /* Nodes */,
 				818503BF1674B0CB0021295D /* CRGameViewController.h */,
 				818503C01674B0CB0021295D /* CRGameViewController.m */,
+				8117C50C167697AA000128DC /* CRFoodFlow.h */,
+				8117C50D167697AA000128DC /* CRFoodFlow.m */,
+				8117C51016769BE6000128DC /* CRFoodDistributionCenter.h */,
+				8117C51116769BE6000128DC /* CRFoodDistributionCenter.m */,
+				8117C50816769763000128DC /* CRFoodSourceCapacity.h */,
+				8117C50916769763000128DC /* CRFoodSourceCapacity.m */,
 				815BECCA1674C97B003A0B51 /* CRPulse.h */,
 				815BECCB1674C97B003A0B51 /* CRPulse.m */,
+				818503C71674B9EC0021295D /* CRGeometry.h */,
 				818503C41674B1320021295D /* MainStoryboard.storyboard */,
 				8185037D1674AFA20021295D /* Supporting Files */,
 			);
@@ -168,10 +202,10 @@
 			children = (
 				818503851674AFA30021295D /* CRAppDelegate.h */,
 				818503861674AFA30021295D /* CRAppDelegate.m */,
-				8185037E1674AFA20021295D /* Cancer-Info.plist */,
+				8185037E1674AFA20021295D /* Neoplasm-Info.plist */,
 				8185037F1674AFA20021295D /* InfoPlist.strings */,
 				818503821674AFA20021295D /* main.m */,
-				818503841674AFA20021295D /* Cancer-Prefix.pch */,
+				818503841674AFA20021295D /* Neoplasm-Prefix.pch */,
 				818503881674AFA30021295D /* Default.png */,
 				8185038A1674AFA30021295D /* Default@2x.png */,
 				8185038C1674AFA30021295D /* Default-568h@2x.png */,
@@ -192,7 +226,7 @@
 		8185039B1674AFA30021295D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8185039C1674AFA30021295D /* CancerTests-Info.plist */,
+				8185039C1674AFA30021295D /* NeoplasmTests-Info.plist */,
 				8185039D1674AFA30021295D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -203,15 +237,21 @@
 			children = (
 				818503AF1674B0070021295D /* CRNode.h */,
 				818503B01674B0070021295D /* CRNode.m */,
-				815BECC61674C87C003A0B51 /* CRCell.h */,
-				815BECC71674C87C003A0B51 /* CRCell.m */,
 				818503B31674B0190021295D /* CRSprite.h */,
 				818503B41674B0190021295D /* CRSprite.m */,
-				818503C71674B9EC0021295D /* CRGeometry.h */,
+				81CB52671679115F005618FB /* CRConnection.h */,
+				81CB52681679115F005618FB /* CRConnection.m */,
+				8145526B1677ED6700EDE9E9 /* CRNeoplasm.h */,
+				8145526C1677ED6700EDE9E9 /* CRNeoplasm.m */,
+				815BECC61674C87C003A0B51 /* CRCell.h */,
+				815BECC71674C87C003A0B51 /* CRCell.m */,
+				8117C50316769605000128DC /* CRFoodSource.h */,
+				8117C50416769605000128DC /* CRFoodSource.m */,
 				818503B71674B0350021295D /* CRScene.h */,
 				818503B81674B0350021295D /* CRScene.m */,
 				818503BB1674B0630021295D /* CRGameScene.h */,
 				818503BC1674B0630021295D /* CRGameScene.m */,
+				815BECCE1674D4F5003A0B51 /* cancer.png */,
 			);
 			name = Nodes;
 			sourceTree = "<group>";
@@ -219,9 +259,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		818503711674AFA20021295D /* Cancer */ = {
+		818503711674AFA20021295D /* Neoplasm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 818503A51674AFA30021295D /* Build configuration list for PBXNativeTarget "Cancer" */;
+			buildConfigurationList = 818503A51674AFA30021295D /* Build configuration list for PBXNativeTarget "Neoplasm" */;
 			buildPhases = (
 				8185036E1674AFA20021295D /* Sources */,
 				8185036F1674AFA20021295D /* Frameworks */,
@@ -231,14 +271,14 @@
 			);
 			dependencies = (
 			);
-			name = Cancer;
+			name = Neoplasm;
 			productName = Cancer;
-			productReference = 818503721674AFA20021295D /* Cancer.app */;
+			productReference = 818503721674AFA20021295D /* Neoplasm.app */;
 			productType = "com.apple.product-type.application";
 		};
-		818503921674AFA30021295D /* CancerTests */ = {
+		818503921674AFA30021295D /* NeoplasmTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 818503A81674AFA30021295D /* Build configuration list for PBXNativeTarget "CancerTests" */;
+			buildConfigurationList = 818503A81674AFA30021295D /* Build configuration list for PBXNativeTarget "NeoplasmTests" */;
 			buildPhases = (
 				8185038E1674AFA30021295D /* Sources */,
 				8185038F1674AFA30021295D /* Frameworks */,
@@ -250,9 +290,9 @@
 			dependencies = (
 				818503991674AFA30021295D /* PBXTargetDependency */,
 			);
-			name = CancerTests;
+			name = NeoplasmTests;
 			productName = CancerTests;
-			productReference = 818503931674AFA30021295D /* CancerTests.octest */;
+			productReference = 818503931674AFA30021295D /* NeoplasmTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +305,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Lukas Gianinazzi";
 			};
-			buildConfigurationList = 8185036C1674AFA20021295D /* Build configuration list for PBXProject "Cancer" */;
+			buildConfigurationList = 8185036C1674AFA20021295D /* Build configuration list for PBXProject "Neoplasm" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -277,8 +317,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				818503711674AFA20021295D /* Cancer */,
-				818503921674AFA30021295D /* CancerTests */,
+				818503711674AFA20021295D /* Neoplasm */,
+				818503921674AFA30021295D /* NeoplasmTests */,
 			);
 		};
 /* End PBXProject section */
@@ -293,6 +333,7 @@
 				8185038B1674AFA30021295D /* Default@2x.png in Resources */,
 				8185038D1674AFA30021295D /* Default-568h@2x.png in Resources */,
 				818503C51674B1320021295D /* MainStoryboard.storyboard in Resources */,
+				815BECCF1674D4F5003A0B51 /* cancer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +343,7 @@
 			files = (
 				8185039F1674AFA30021295D /* InfoPlist.strings in Resources */,
 				818503C61674B1320021295D /* MainStoryboard.storyboard in Resources */,
+				815BECD01674D4F5003A0B51 /* cancer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +379,12 @@
 				818503C11674B0CB0021295D /* CRGameViewController.m in Sources */,
 				815BECC81674C87C003A0B51 /* CRCell.m in Sources */,
 				815BECCC1674C97B003A0B51 /* CRPulse.m in Sources */,
+				8117C50516769605000128DC /* CRFoodSource.m in Sources */,
+				8117C50A16769764000128DC /* CRFoodSourceCapacity.m in Sources */,
+				8117C50E167697AA000128DC /* CRFoodFlow.m in Sources */,
+				8117C51216769BE6000128DC /* CRFoodDistributionCenter.m in Sources */,
+				8145526D1677ED6700EDE9E9 /* CRNeoplasm.m in Sources */,
+				81CB52691679115F005618FB /* CRConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +400,12 @@
 				818503C21674B0CB0021295D /* CRGameViewController.m in Sources */,
 				815BECC91674C87C003A0B51 /* CRCell.m in Sources */,
 				815BECCD1674C97B003A0B51 /* CRPulse.m in Sources */,
+				8117C50616769605000128DC /* CRFoodSource.m in Sources */,
+				8117C50B16769764000128DC /* CRFoodSourceCapacity.m in Sources */,
+				8117C50F167697AA000128DC /* CRFoodFlow.m in Sources */,
+				8117C51316769BE6000128DC /* CRFoodDistributionCenter.m in Sources */,
+				8145526E1677ED6700EDE9E9 /* CRNeoplasm.m in Sources */,
+				81CB526A1679115F005618FB /* CRConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +414,7 @@
 /* Begin PBXTargetDependency section */
 		818503991674AFA30021295D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 818503711674AFA20021295D /* Cancer */;
+			target = 818503711674AFA20021295D /* Neoplasm */;
 			targetProxy = 818503981674AFA30021295D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -439,9 +493,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cancer/Cancer-Prefix.pch";
-				INFOPLIST_FILE = "Cancer/Cancer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Cancer/Neoplasm-Prefix.pch";
+				INFOPLIST_FILE = "Cancer/Neoplasm-Info.plist";
+				PRODUCT_NAME = Neoplasm;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -450,9 +504,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cancer/Cancer-Prefix.pch";
-				INFOPLIST_FILE = "Cancer/Cancer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Cancer/Neoplasm-Prefix.pch";
+				INFOPLIST_FILE = "Cancer/Neoplasm-Info.plist";
+				PRODUCT_NAME = Neoplasm;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,8 +521,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cancer/Cancer-Prefix.pch";
-				INFOPLIST_FILE = "CancerTests/CancerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "CancerTests/NeoplasmTests-Info.plist";
+				PRODUCT_NAME = NeoplasmTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -484,8 +538,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cancer/Cancer-Prefix.pch";
-				INFOPLIST_FILE = "CancerTests/CancerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "CancerTests/NeoplasmTests-Info.plist";
+				PRODUCT_NAME = NeoplasmTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -494,7 +548,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8185036C1674AFA20021295D /* Build configuration list for PBXProject "Cancer" */ = {
+		8185036C1674AFA20021295D /* Build configuration list for PBXProject "Neoplasm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				818503A31674AFA30021295D /* Debug */,
@@ -503,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		818503A51674AFA30021295D /* Build configuration list for PBXNativeTarget "Cancer" */ = {
+		818503A51674AFA30021295D /* Build configuration list for PBXNativeTarget "Neoplasm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				818503A61674AFA30021295D /* Debug */,
@@ -512,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		818503A81674AFA30021295D /* Build configuration list for PBXNativeTarget "CancerTests" */ = {
+		818503A81674AFA30021295D /* Build configuration list for PBXNativeTarget "NeoplasmTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				818503A91674AFA30021295D /* Debug */,
