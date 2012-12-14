@@ -9,11 +9,6 @@
 #import "CRVessel.h"
 #import "CRGeometry.h"
 
-const GLubyte Indices[] = {
-    0, 1, 2,
-    2, 3, 0
-};
-
 @interface  CRVessel()
 
 @property (assign) ColoredQuad vertices;
@@ -55,12 +50,11 @@ const GLubyte Indices[] = {
 
 - (void)recalculateVertices
 {
-    //float length = GLKVector2Distance(self.startPoint, self.endPoint);
     
     //we get the direction between the start and endpoint
     GLKVector2 difference_vec = GLKVector2Subtract(self.endPoint, self.startPoint);
     //this is the normal of the direction of the vessel
-    GLKVector2 normal_vec = GLKVector2Normalize(GLKVector2Make(difference_vec.x, -difference_vec.y));
+    GLKVector2 normal_vec = GLKVector2Normalize(GLKVector2Make(-difference_vec.y, difference_vec.x));
     
     //Now we add the normal_vec to the start and end points to get the desired coordinates
     GLKVector2 p1 = GLKVector2Add(self.startPoint, GLKVector2MultiplyScalar(normal_vec, 0.5*self.thickness));
@@ -104,7 +98,7 @@ const GLubyte Indices[] = {
     glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, sizeof(ColoredVertex), (void *) (offset + offsetof(ColoredVertex, spaceCoordinate)));
     glVertexAttribPointer(GLKVertexAttribColor, 2, GL_FLOAT, GL_FALSE, sizeof(ColoredVertex), (void *) (offset + offsetof(ColoredVertex, Color)));
     
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
     
 }
 

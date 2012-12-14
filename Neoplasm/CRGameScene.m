@@ -236,7 +236,12 @@ float _scaleForNextUpdate;
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {
         //for the moment, just always assume that the user doesn't want to cancel the operation
         if (self.userIsCreatingANewCell) {
-            [self.neoplasm newNeighborToCell:self.activeCell atLoaction:glvector];
+            CRCell * cell = [self.neoplasm cellAtPoint:glvector];
+            if (cell) {
+                [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
+            } else {
+                [self.neoplasm newNeighborToCell:self.activeCell atLoaction:glvector];
+            }
             self.activeCell.pulsate = YES;
             self.activeCell = nil;
         }

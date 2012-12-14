@@ -9,6 +9,9 @@
 #import "CRNeoplasm.h"
 #import "CRVessel.h"
 
+#define DEFAULT_VESSEL_THICKNESS 30
+#define SIZE_OF_BOX_FOR_HIT_DETECTION 35
+
 @interface  CRNeoplasm()
 @property (nonatomic, strong) GLKBaseEffect * effect;
 @property (nonatomic, strong) NSMutableSet * cells;
@@ -35,19 +38,26 @@
 
 - (void)newNeighborToCell:(CRCell *)cell atLoaction:(GLKVector2)location
 {
-    [self addNewCellAtPoint:location];
-    CRVessel * vessel = [[CRVessel alloc] initWithEffect:self.effect];
+    CRCell * newCell = [self addNewCellAtPoint:location];
     
-    vessel.thickness = 30;
-    vessel.startPoint = cell.position;
-    vessel.endPoint = location;
-    
-    [self.children addObject:vessel];
+    [self newVesselBetweenCell:cell andOtherCell:newCell];
     
 }
 
+- (void)newVesselBetweenCell:(CRCell *)cell1 andOtherCell:(CRCell *)cell2
+{
+    if (cell1 != cell2) {
+        CRVessel * vessel = [[CRVessel alloc] initWithEffect:self.effect];
+        //float length = GLKVector2Distance(cell.position, location);
+        vessel.thickness = DEFAULT_VESSEL_THICKNESS;
+        vessel.startPoint = cell1.position;
+        vessel.endPoint = cell2.position;
+    
+        [self.children addObject:vessel];
+    }
+}
 
-- (void)addNewCellAtPoint:(GLKVector2)location
+- (CRCell*)addNewCellAtPoint:(GLKVector2)location
 {
     CRCell * cell = [CRCell cellWithEffect:self.effect];
         
@@ -57,29 +67,30 @@
     [self.children addObject:cell];
     [self.cells addObject:cell];
     
-    
+    return cell;
 }
 
 - (CRCell*)cellAtPoint:(GLKVector2)location
 {
-    float sizeOfPoint = 20;
+    float sizeOfPoint = SIZE_OF_BOX_FOR_HIT_DETECTION;
     CGRect locationBox = CGRectMake(location.x-sizeOfPoint, location.y-sizeOfPoint, sizeOfPoint, sizeOfPoint);
     
     __block CGRect box;
     __block CRCell * result;
     
-    
+    /*
     for (CRCell * cell in self.cells) {
+        
+    }*/
+    
+    [self.cells enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
+        CRCell * cell = obj;
         box = cell.boundingBox;
         
         if (CGRectIntersectsRect(box, locationBox)) {
-            //*stop = YES;
+            *stop = YES;
             result = cell;
         }
-    }
-    
-    [self.cells enumerateObjectsUsingBlock:^(id obj, BOOL *stop) {
-
     }];
     
     return result;
