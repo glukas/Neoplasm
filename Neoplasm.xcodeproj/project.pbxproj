@@ -51,6 +51,14 @@
 		8172656C167B5B2D0054D34D /* CRRenderedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172656A167B5B2D0054D34D /* CRRenderedNode.m */; };
 		8172656F167B9C590054D34D /* CRFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172656E167B9C590054D34D /* CRFood.m */; };
 		81726570167B9C590054D34D /* CRFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172656E167B9C590054D34D /* CRFood.m */; };
+		81726572167BCB5F0054D34D /* white_cell_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 81726571167BCB5F0054D34D /* white_cell_50.png */; };
+		81726573167BCB5F0054D34D /* white_cell_50.png in Resources */ = {isa = PBXBuildFile; fileRef = 81726571167BCB5F0054D34D /* white_cell_50.png */; };
+		8172657E167BCDF30054D34D /* CRSpawner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172657D167BCDF20054D34D /* CRSpawner.m */; };
+		8172657F167BCDF30054D34D /* CRSpawner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172657D167BCDF20054D34D /* CRSpawner.m */; };
+		81726582167BCFB90054D34D /* CRWhiteTissue.m in Sources */ = {isa = PBXBuildFile; fileRef = 81726581167BCFB80054D34D /* CRWhiteTissue.m */; };
+		81726583167BCFB90054D34D /* CRWhiteTissue.m in Sources */ = {isa = PBXBuildFile; fileRef = 81726581167BCFB80054D34D /* CRWhiteTissue.m */; };
+		817F0217167CE6CC00DFB7F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817F0216167CE6CC00DFB7F3 /* Security.framework */; };
+		817F0219167CF4A000DFB7F3 /* white_cell_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 817F0218167CF4A000DFB7F3 /* white_cell_100.png */; };
 		818503771674AFA20021295D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503761674AFA20021295D /* UIKit.framework */; };
 		818503791674AFA20021295D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818503781674AFA20021295D /* Foundation.framework */; };
 		8185037B1674AFA20021295D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8185037A1674AFA20021295D /* CoreGraphics.framework */; };
@@ -113,6 +121,13 @@
 		8172656A167B5B2D0054D34D /* CRRenderedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRRenderedNode.m; path = Neoplasm/CRRenderedNode.m; sourceTree = "<group>"; };
 		8172656D167B9C580054D34D /* CRFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRFood.h; path = Neoplasm/CRFood.h; sourceTree = "<group>"; };
 		8172656E167B9C590054D34D /* CRFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRFood.m; path = Neoplasm/CRFood.m; sourceTree = "<group>"; };
+		81726571167BCB5F0054D34D /* white_cell_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_cell_50.png; path = ../../white_cell_50.png; sourceTree = "<group>"; };
+		8172657C167BCDF10054D34D /* CRSpawner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRSpawner.h; path = Neoplasm/CRSpawner.h; sourceTree = "<group>"; };
+		8172657D167BCDF20054D34D /* CRSpawner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRSpawner.m; path = Neoplasm/CRSpawner.m; sourceTree = "<group>"; };
+		81726580167BCFB80054D34D /* CRWhiteTissue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRWhiteTissue.h; path = Neoplasm/CRWhiteTissue.h; sourceTree = "<group>"; };
+		81726581167BCFB80054D34D /* CRWhiteTissue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRWhiteTissue.m; path = Neoplasm/CRWhiteTissue.m; sourceTree = "<group>"; };
+		817F0216167CE6CC00DFB7F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		817F0218167CF4A000DFB7F3 /* white_cell_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_cell_100.png; path = ../../white_cell_100.png; sourceTree = "<group>"; };
 		818503721674AFA20021295D /* Neoplasm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neoplasm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818503761674AFA20021295D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		818503781674AFA20021295D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817F0217167CE6CC00DFB7F3 /* Security.framework in Frameworks */,
 				818503AE1674AFD00021295D /* OpenGLES.framework in Frameworks */,
 				818503AC1674AFCA0021295D /* GLKit.framework in Frameworks */,
 				818503771674AFA20021295D /* UIKit.framework in Frameworks */,
@@ -187,6 +203,10 @@
 				81687E29167B30A7005EB1A8 /* CRCell.m */,
 				81687E2A167B30A7005EB1A8 /* CRVessel.h */,
 				81687E2B167B30A7005EB1A8 /* CRVessel.m */,
+				81687E30167B30A7005EB1A8 /* CRFoodSource.h */,
+				81687E31167B30A7005EB1A8 /* CRFoodSource.m */,
+				81726580167BCFB80054D34D /* CRWhiteTissue.h */,
+				81726581167BCFB80054D34D /* CRWhiteTissue.m */,
 				81687E39167B30A7005EB1A8 /* CRNeoplasm.h */,
 				81687E3A167B30A7005EB1A8 /* CRNeoplasm.m */,
 				81687E3F167B30A7005EB1A8 /* CRScene.h */,
@@ -200,6 +220,8 @@
 		81687E7A167B3120005EB1A8 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				817F0218167CF4A000DFB7F3 /* white_cell_100.png */,
+				81726571167BCB5F0054D34D /* white_cell_50.png */,
 				81687E4A167B30A7005EB1A8 /* MainStoryboard.storyboard */,
 			);
 			name = "User Interface";
@@ -214,15 +236,15 @@
 				81687E2D167B30A7005EB1A8 /* CRFoodDistributionCenter.m */,
 				8172656D167B9C580054D34D /* CRFood.h */,
 				8172656E167B9C590054D34D /* CRFood.m */,
+				8172657C167BCDF10054D34D /* CRSpawner.h */,
+				8172657D167BCDF20054D34D /* CRSpawner.m */,
 				81687E2E167B30A7005EB1A8 /* CRFoodFlow.h */,
 				81687E2F167B30A7005EB1A8 /* CRFoodFlow.m */,
-				81687E30167B30A7005EB1A8 /* CRFoodSource.h */,
-				81687E31167B30A7005EB1A8 /* CRFoodSource.m */,
 				81687E32167B30A7005EB1A8 /* CRFoodSourceCapacity.h */,
 				81687E33167B30A7005EB1A8 /* CRFoodSourceCapacity.m */,
+				81687E38167B30A7005EB1A8 /* CRGeometry.h */,
 				81687E36167B30A7005EB1A8 /* CRGameViewController.h */,
 				81687E37167B30A7005EB1A8 /* CRGameViewController.m */,
-				81687E38167B30A7005EB1A8 /* CRGeometry.h */,
 				81687E3D167B30A7005EB1A8 /* CRPulse.h */,
 				81687E3E167B30A7005EB1A8 /* CRPulse.m */,
 				81687E78167B30CB005EB1A8 /* Supporting Files */,
@@ -243,6 +265,7 @@
 		818503751674AFA20021295D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				817F0216167CE6CC00DFB7F3 /* Security.framework */,
 				818503AD1674AFD00021295D /* OpenGLES.framework */,
 				818503AB1674AFCA0021295D /* GLKit.framework */,
 				818503761674AFA20021295D /* UIKit.framework */,
@@ -329,6 +352,8 @@
 				81687E6B167B30A7005EB1A8 /* Default.png in Resources */,
 				81687E6D167B30A7005EB1A8 /* Default@2x.png in Resources */,
 				81687E73167B30A7005EB1A8 /* MainStoryboard.storyboard in Resources */,
+				81726572167BCB5F0054D34D /* white_cell_50.png in Resources */,
+				817F0219167CF4A000DFB7F3 /* white_cell_100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +367,7 @@
 				81687E70167B30A7005EB1A8 /* InfoPlist.strings in Resources */,
 				81687E74167B30A7005EB1A8 /* MainStoryboard.storyboard in Resources */,
 				81687E76167B30A7005EB1A8 /* Neoplasm-Info.plist in Resources */,
+				81726573167BCB5F0054D34D /* white_cell_50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +411,8 @@
 				81687E71167B30A7005EB1A8 /* main.m in Sources */,
 				8172656B167B5B2D0054D34D /* CRRenderedNode.m in Sources */,
 				8172656F167B9C590054D34D /* CRFood.m in Sources */,
+				8172657E167BCDF30054D34D /* CRSpawner.m in Sources */,
+				81726582167BCFB90054D34D /* CRWhiteTissue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +437,8 @@
 				81687E72167B30A7005EB1A8 /* main.m in Sources */,
 				8172656C167B5B2D0054D34D /* CRRenderedNode.m in Sources */,
 				81726570167B9C590054D34D /* CRFood.m in Sources */,
+				8172657F167BCDF30054D34D /* CRSpawner.m in Sources */,
+				81726583167BCFB90054D34D /* CRWhiteTissue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

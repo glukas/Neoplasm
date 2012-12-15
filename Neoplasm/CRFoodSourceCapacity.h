@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRFood.h"
 
-@interface CRFoodSourceCapacity : NSObject
+@interface CRFoodSourceCapacity : CRFood
 
 @end

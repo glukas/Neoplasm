@@ -10,10 +10,18 @@
 
 @implementation CRFood
 
+
+- (id)initWithAmount:(float)amount
+{
+    self = [super init];
+    if (self) {
+        self.amount = amount;
+    } return self;
+}
+
 + (CRFood*)foodWithAmount:(float)amount
 {
-    CRFood * food = [[CRFood alloc] init];
-    food.amount = amount;
+    CRFood * food = [[CRFood alloc] initWithAmount:amount];
     return food;
 }
 

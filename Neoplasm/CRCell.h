@@ -18,6 +18,8 @@
 
 @interface CRCell : CRSprite
 
+- (id)initWithEffect:(GLKBaseEffect*)effect;
+
 + (CRCell*)cellWithEffect:(GLKBaseEffect*)effect;
 
 //@property (assign) float strength; //value from 1 to 100; //default is 10

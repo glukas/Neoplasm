@@ -28,7 +28,7 @@
 
 - (CRFood *)foodForCell:(CRCell *)cell
 {
-    return [CRFood foodWithAmount:0.2*self.time];
+    return [CRFood foodWithAmount:10];
 }
 
 

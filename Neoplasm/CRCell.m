@@ -15,16 +15,29 @@
 
 @property (nonatomic, strong) NSMutableSet * neighbors;
 
+@property (nonatomic) float strength;//from 0 to 1
+
+@property (nonatomic, strong) CRFood * consumption;
+
 @end
 
 @implementation CRCell
 
 
+- (id)initWithEffect:(GLKBaseEffect *)effect
+{
+    self = [super initWithFile:@"cancer.png" effect:effect];
+    if (self) {
+        _strength = 0.2;
+        _consumption = [CRFood foodWithAmount:9];
+    } return self;
+    
+}
+
 + (CRCell*)cellWithEffect:(GLKBaseEffect *)effect
 {
-    CRCell * cell = [[super alloc] initWithFile:@"cancer.png" effect:effect];
-    
-    //cell.strength = 10;
+    CRCell * cell = [[self alloc] initWithEffect:effect];
+
     return cell;
 }
 
@@ -53,7 +66,6 @@
 
 
 
-
 #pragma mark network structure
 
 - (void)addNeighbor:(CRCell*)cell
@@ -78,6 +90,8 @@
 {
     [self.neighbors makeObjectsPerformSelector:selector];
 }
+
+
 #pragma mark state
 
 - (void)update:(float)timeSinceLastUpdate
@@ -91,14 +105,23 @@
     
     CRFood * food = [self.delegate foodForCell:self];
     
-    //todo: determine surplus/shortage if food (ask parent)
-    //...
-    
-    //todo: set the scale to refrect new size
     //todo: set pulse rate to reflect rate of consumption
     
+    //if there is more food than consumption, the strength grows, otherwise it shrinks
+    float growth_factor = 0.0001;
+    
+    self.strength = self.strength+(food.amount-self.consumption.amount)*growth_factor;
+    if (self.strength > 1) {
+        self.strength = 1;
+    } else if (self.strength <= 0) {
+        //destroy
+    }
+    
     //pulse
-    self.scale = food.amount*(0.5+0.5*self.pulse.pulse);
+    
+    
+    
+    self.scale = self.strength/2 + self.strength*self.pulse.pulse;
 }
 
 

@@ -10,7 +10,7 @@
 #import "CRVessel.h"
 #import "CRFoodDistributionCenter.h"
 
-#define DEFAULT_VESSEL_THICKNESS 30
+#define DEFAULT_VESSEL_THICKNESS 8
 #define SIZE_OF_BOX_FOR_HIT_DETECTION 35
 
 @interface  CRNeoplasm()

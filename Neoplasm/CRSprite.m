@@ -64,8 +64,9 @@
     [super renderWithModelViewMatrix:modelViewMatrix];
     
     //configure effect
-    self.effect.texture2d0.name = self.textureInfo.name;
     self.effect.texture2d0.enabled = YES;
+    self.effect.texture2d0.name = self.textureInfo.name;
+    
     self.effect.transform.modelviewMatrix = GLKMatrix4Multiply(modelViewMatrix, [self modelMatrix:YES]);
     
     [self.effect prepareToDraw];
@@ -77,6 +78,7 @@
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
+    glDisableVertexAttribArray(GLKVertexAttribColor);
     
     //basically pass the quad property to gl
     glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, sizeof(TexturedVertex), (void *) (offset + offsetof(TexturedVertex, spaceCoordinate)));

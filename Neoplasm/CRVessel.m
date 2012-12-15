@@ -70,7 +70,6 @@
     newVertices.tl.spaceCoordinate = CGPointMake(p3.x, p3.y);
     newVertices.tr.spaceCoordinate = CGPointMake(p4.x, p4.y);
     
-    
     self.vertices = newVertices;
     
 }
@@ -81,21 +80,23 @@
 {
     [super renderWithModelViewMatrix:modelViewMatrix];
     
+    self.effect.texture2d0.enabled = NO;
     self.effect.transform.modelviewMatrix = GLKMatrix4Multiply(modelViewMatrix, [self modelMatrix:YES]);
-    
     [self.effect prepareToDraw];
+    
     
     //location in memory
     long offset = (long)&_vertices;
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
+    glDisableVertexAttribArray(GLKVertexAttribTexCoord0);
     glEnableVertexAttribArray(GLKVertexAttribColor);
     
     //basically pass the property to gl
     glVertexAttribPointer(GLKVertexAttribPosition, 2, GL_FLOAT, GL_FALSE, sizeof(ColoredVertex), (void *) (offset + offsetof(ColoredVertex, spaceCoordinate)));
     glVertexAttribPointer(GLKVertexAttribColor, 2, GL_FLOAT, GL_FALSE, sizeof(ColoredVertex), (void *) (offset + offsetof(ColoredVertex, Color)));
     
-    glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     
 }
 

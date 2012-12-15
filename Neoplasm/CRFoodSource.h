@@ -12,12 +12,13 @@
 
 @interface CRFoodSource : CRSprite
 
-+ (CRFoodSource *)foodSourceWithCapacity:(CRFoodSourceCapacity *)capacity;
+- (id)initWithEffect:(GLKBaseEffect*)effect capacity:(CRFoodSourceCapacity*)capacity;
 
-- (void)foodSinceLastUpdate:(float)timeSinceLastUpdate forCell:(CRCell*)cell;
+//the food produced between updates 
+- (CRFood*)foodProduced;
 
 //Which cell is consuming the food source?
 //nil if none
-@property (nonatomic) CRCell * parasite;
+@property (nonatomic, strong) CRCell * consumer;
 
 @end

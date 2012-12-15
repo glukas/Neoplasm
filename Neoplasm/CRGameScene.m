@@ -9,10 +9,11 @@
 #import "CRGameScene.h"
 #import "CRCell.h"
 #import "CRPulse.h"
+#import "CRWhiteTissue.h"
 
 #define MIN_DURATION_FOR_NODE_CREATION 0.17
 
-float _minScale = 0.1;
+float _minScale = 0.08;
 
 @interface  CRGameScene()
 
@@ -23,7 +24,9 @@ float _minScale = 0.1;
 @property (nonatomic, strong) UIPinchGestureRecognizer * pinchGesture;
 @property (nonatomic, strong) UILongPressGestureRecognizer * pressGesture;
 
-@property (nonatomic, strong) CRNeoplasm * neoplasm;
+@property (nonatomic, strong) CRNeoplasm * neoplasm; //the player
+
+@property (nonatomic, strong) CRWhiteTissue * whiteTissue; //the enemy
 
 @property (readonly) BOOL userIsCreatingANewCell;
 @property (nonatomic) CRCell * activeCell; //(creating a new cell next to it)
@@ -44,6 +47,12 @@ float _scaleForNextUpdate;
 {
     CRGameScene * scene = [[self alloc] initWithEffect:effect];
     scene.view = view;
+    
+    scene.whiteTissue = [[CRWhiteTissue alloc] initWithEffect:effect];
+    scene.whiteTissue.foodSpawner = [[CRSpawner alloc] init];
+    [scene.whiteTissue.foodSpawner setBounds:GLKVector4Make(1000, -1000, 1000, -1000)];
+    [scene.children addObject:scene.whiteTissue];
+    [scene.whiteTissue.foodSpawner spawnLocations:20];
     
     scene.neoplasm = [CRNeoplasm neoplasmWithEffect:effect initialCellAtPoint:GLKVector2Make(100, 200)];
     [scene.children addObject:scene.neoplasm];

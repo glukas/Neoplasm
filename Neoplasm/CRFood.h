@@ -10,6 +10,8 @@
 
 @interface CRFood : NSObject
 
+- (id)initWithAmount:(float)amount;
+
 + (CRFood*)foodWithAmount:(float)amount;
 
 @property (nonatomic) float amount;
