@@ -19,6 +19,7 @@
 
 - (void)addFoodSource:(CRFoodSource*)source;
 
+//food per second for this cell
 - (CRFood*)foodForCell:(CRCell*)cell;
 
 @end

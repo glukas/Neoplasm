@@ -8,6 +8,10 @@
 
 #import "CRNode.h"
 
+@interface  CRNode()
+@property (nonatomic, strong) NSMutableArray * nodesToDelete;
+@end
+
 @implementation CRNode
 
 - (NSMutableArray *)children
@@ -15,6 +19,13 @@
     if (!_children) {
         _children = [NSMutableArray array];
     } return _children;
+}
+
+- (NSMutableArray *)nodesToDelete
+{
+    if (!_nodesToDelete) {
+        _nodesToDelete = [NSMutableArray array];
+    } return _nodesToDelete;
 }
 
 - (id)init
@@ -71,6 +82,12 @@
 
 - (void)update:(float)timeSinceLastUpdate
 {
+    //perform child removal
+    for (CRNode * node in self.nodesToDelete) {
+        [self.children removeObject:node];
+    }
+    [self.nodesToDelete removeAllObjects];
+    
     //propate to children
     for (CRNode * node in self.children) {
         [node update:timeSinceLastUpdate];
@@ -104,6 +121,11 @@
 - (void)addChild:(CRNode *)child
 {
     [self.children addObject:child];
+}
+
+- (void)removeChild:(CRNode *)child
+{
+    [self.nodesToDelete addObject:child];
 }
 
 @end

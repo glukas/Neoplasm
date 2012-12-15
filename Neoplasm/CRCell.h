@@ -8,11 +8,17 @@
 
 #import "CRSprite.h"
 #import "CRFood.h"
+#import "CRVessel.h"
 
 @class CRCell;
+@class CRVessel;
 
 @protocol CRCellDelegate <NSObject>
 - (CRFood*)foodForCell:(CRCell*)cell;
+
+//prompts the delegate to delete this cell
+- (void)deleteCell:(CRCell*)cell;
+
 @end
 
 
@@ -36,13 +42,14 @@
 
 #pragma mark connections to other cells
 
-- (void)addNeighbor:(CRCell*)cell;
+- (void)addVessel:(CRVessel*) vessel;
 
-- (void)removeNeighbor:(CRCell*)cell;
+- (void)removeVessel:(CRVessel*) vessel;
+
+- (void)removeAllVessels;
 
 //set stop to YES if you dont want to stop traversal early
 - (void)enumerateNeighborsUsingBlock:(void (^)(id obj, BOOL *stop))block;
 
-- (void)makeNeighborsPerformSelector:(SEL)selector;
-
+- (void)enumerateVesselsUsingBlock:(void (^)(id obj, BOOL *stop))block;
 @end

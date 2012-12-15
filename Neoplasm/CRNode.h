@@ -27,6 +27,10 @@
 //modify the hierarchy
 - (void)addChild:(CRNode *)child;
 
+- (void)removeChild:(CRNode *)child;
+
+//changing this property is dangerous!
+//it should be made internal in the future
 @property (nonatomic, strong) NSMutableArray * children;
 
 
@@ -47,9 +51,6 @@
 @property (assign) float rotation;
 
 @property (assign) float rotationVelocity;
-
-
-
 
 @property (assign) GLKVector2 anchorPoint; //values from 0.0 to 1.0 specifying whith respect to shich part of the node scaling should be performed and position assigned
 

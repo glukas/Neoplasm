@@ -17,7 +17,7 @@
 
 - (CRCell *)cellAtPoint:(GLKVector2)location;
 
-- (void)newNeighborToCell:(CRCell*)cell atLoaction:(GLKVector2)location;
+- (void)newNeighborToCell:(CRCell*)cell atLocation:(GLKVector2)location;
 
 - (void)newVesselBetweenCell:(CRCell*)cell1 andOtherCell:(CRCell*)cell2;
 

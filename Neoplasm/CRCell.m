@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) CRPulse * pulse;
 
-@property (nonatomic, strong) NSMutableSet * neighbors;
+@property (nonatomic, strong) NSMutableSet * vessels;
 
 @property (nonatomic) float strength;//from 0 to 1
 
@@ -23,13 +23,20 @@
 
 @implementation CRCell
 
+- (NSMutableSet*)vessels
+{
+    if (!_vessels) {
+        _vessels = [NSMutableSet set];
+    } return _vessels;
+}
+
 
 - (id)initWithEffect:(GLKBaseEffect *)effect
 {
     self = [super initWithFile:@"cancer.png" effect:effect];
     if (self) {
-        _strength = 0.2;
-        _consumption = [CRFood foodWithAmount:9];
+        _strength = 0.5;
+        _consumption = [CRFood foodWithAmount:12];
     } return self;
     
 }
@@ -68,28 +75,39 @@
 
 #pragma mark network structure
 
-- (void)addNeighbor:(CRCell*)cell
+- (void)addVessel:(CRVessel *)vessel
 {
-    [self.neighbors addObject:cell];
-    
-    
+    if (vessel.cell1 == self || vessel.cell2 == self) {
+        [self.vessels addObject:vessel];
+    }
+    NSLog(@"%@", self.vessels);
 }
 
-- (void)removeNeighbor:(CRCell*)cell
+- (void)removeVessel:(CRVessel *)vessel
 {
-    [self.neighbors removeObject:cell];
+    [self.vessels removeObject:vessel];
 }
 
+- (void)removeAllVessels
+{
+    [self.vessels removeAllObjects];
+}
+
+- (void)enumerateVesselsUsingBlock:(void (^)(id obj, BOOL *stop))block
+{
+    [self.vessels enumerateObjectsUsingBlock:block];
+}
 
 - (void)enumerateNeighborsUsingBlock:(void (^)(id obj, BOOL *stop))block
 {
-    [self.neighbors enumerateObjectsUsingBlock:block];
+    
+    [self.vessels enumerateObjectsUsingBlock:^(id obj, BOOL *stop2) {
+        
+        block([(CRVessel*)obj otherCell:self], stop2);
+        
+    }];
 }
 
-- (void)makeNeighborsPerformSelector:(SEL)selector
-{
-    [self.neighbors makeObjectsPerformSelector:selector];
-}
 
 
 #pragma mark state
@@ -108,20 +126,17 @@
     //todo: set pulse rate to reflect rate of consumption
     
     //if there is more food than consumption, the strength grows, otherwise it shrinks
-    float growth_factor = 0.0005;
+    float growth_factor = 0.01;
     
-    self.strength = self.strength+(food.amount-self.consumption.amount)*growth_factor;
+    self.strength = self.strength+timeSinceLastUpdate*(food.amount-self.consumption.amount)*growth_factor;
     if (self.strength > 1) {
         self.strength = 1;
-    } else if (self.strength <= 0) {
-        //destroy
+    } else if (self.strength <= 0.15) {
+        [self.delegate deleteCell:self];
+    } else {
+        self.scale = (self.strength + self.strength*self.pulse.pulse)/2;
     }
     
-    //pulse
-    
-    
-    
-    self.scale = self.strength/2 + self.strength*self.pulse.pulse;
 }
 
 

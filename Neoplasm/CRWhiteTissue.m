@@ -9,6 +9,8 @@
 #import "CRWhiteTissue.h"
 #import "CRSpawner.h"
 
+#define SIZE_OF_BOX_FOR_HIT_DETECTION 60
+
 @interface  CRWhiteTissue()
 
 @property (nonatomic, strong) NSMutableSet * cells;
@@ -55,9 +57,31 @@
     _foodSpawner = foodSpawner;
 }
 
+- (CRFoodSource*)foodSourceAtPoint:(GLKVector2)location
+{
+    float sizeOfPoint = SIZE_OF_BOX_FOR_HIT_DETECTION;
+    CGRect locationBox = CGRectMake(location.x-sizeOfPoint/2, location.y-sizeOfPoint/2, sizeOfPoint, sizeOfPoint);
+    
+    __block CGRect box;
+    __block CRFoodSource * result;
+    
+    //test for collision
+    [self.children enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL *stop) {
+        CRFoodSource * source = obj;
+        box = source.boundingBox;
+        
+        if (CGRectIntersectsRect(box, locationBox)) {
+            *stop = YES;
+            result = source;
+        }
+    }];
+    
+    return result;
+}
+
 - (CRFoodSource*)addNewCellAtPoint:(GLKVector2)location
 {
-    CRFoodSource * cell = [[CRFoodSource alloc] initWithEffect:self.effect capacity:[[CRFoodSourceCapacity alloc] initWithAmount:100]];
+    CRFoodSource * cell = [[CRFoodSource alloc] initWithEffect:self.effect capacity:[[CRFoodSourceCapacity alloc] initWithAmount:40+drand48()*64]];
     
     //cell.delegate = self;
     cell.position = location;

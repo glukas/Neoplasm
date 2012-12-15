@@ -52,7 +52,7 @@ float _scaleForNextUpdate;
     scene.whiteTissue.foodSpawner = [[CRSpawner alloc] init];
     [scene.whiteTissue.foodSpawner setBounds:GLKVector4Make(1000, -1000, 1000, -1000)];
     [scene.children addObject:scene.whiteTissue];
-    [scene.whiteTissue.foodSpawner spawnLocations:20];
+    [scene.whiteTissue.foodSpawner spawnLocations:30];
     
     scene.neoplasm = [CRNeoplasm neoplasmWithEffect:effect initialCellAtPoint:GLKVector2Make(100, 200)];
     [scene.children addObject:scene.neoplasm];
@@ -246,10 +246,13 @@ float _scaleForNextUpdate;
         //for the moment, just always assume that the user doesn't want to cancel the operation
         if (self.userIsCreatingANewCell) {
             CRCell * cell = [self.neoplasm cellAtPoint:glvector];
+            CRFoodSource * foodSource = [self.whiteTissue foodSourceAtPoint:glvector];
             if (cell) {
                 [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
+            } else if (foodSource) {
+                [self.neoplasm newNeighborToCell:self.activeCell atLocation:foodSource.position];
             } else {
-                [self.neoplasm newNeighborToCell:self.activeCell atLoaction:glvector];
+                [self.neoplasm newNeighborToCell:self.activeCell atLocation:glvector];
             }
             self.activeCell.pulsate = YES;
             self.activeCell = nil;
@@ -264,6 +267,8 @@ float _scaleForNextUpdate;
         self.scale = self.scale *= gesture.scale;
         if (self.scale < _minScale) {
             self.scale = _minScale;
+        } else if (self.scale > 1) {
+            self.scale = 1;
         }
         //we want the scale to be relative to the last update
         [gesture setScale:1.0];

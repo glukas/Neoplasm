@@ -39,6 +39,17 @@
 }
 
 
+- (CRCell*)otherCell:(CRCell *)cell
+{
+    CRCell * result;
+    if (cell == self.cell1) {
+        result = self.cell2;
+    } else if (cell == self.cell2) {
+        result = self.cell1;
+    }
+    NSLog(@"%@", result);
+    return result;
+}
 
 - (void)recalculateVertices
 {

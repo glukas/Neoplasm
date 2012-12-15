@@ -19,6 +19,7 @@
 
 //Which cell is consuming the food source?
 //nil if none
+
 @property (nonatomic, strong) CRCell * consumer;
 
 @end

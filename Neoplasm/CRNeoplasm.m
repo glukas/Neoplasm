@@ -11,7 +11,7 @@
 #import "CRFoodDistributionCenter.h"
 
 #define DEFAULT_VESSEL_THICKNESS 8
-#define SIZE_OF_BOX_FOR_HIT_DETECTION 35
+#define SIZE_OF_BOX_FOR_HIT_DETECTION 40
 
 @interface  CRNeoplasm()
 @property (nonatomic, strong) NSMutableSet * cells;
@@ -43,7 +43,7 @@
 }
 
 
-- (void)newNeighborToCell:(CRCell *)cell atLoaction:(GLKVector2)location
+- (void)newNeighborToCell:(CRCell *)cell atLocation:(GLKVector2)location
 {
     CRCell * newCell = [self addNewCellAtPoint:location];
     if (cell) {
@@ -57,6 +57,10 @@
         CRVessel * vessel = [[CRVessel alloc] initWithEffect:self.effect];
         //float length = GLKVector2Distance(cell.position, location);
         vessel.thickness = DEFAULT_VESSEL_THICKNESS;
+        vessel.cell1 = cell1;
+        vessel.cell2 = cell2;
+        [cell1 addVessel:vessel];
+        [cell2 addVessel:vessel];
         vessel.startPoint = cell1.position;
         vessel.endPoint = cell2.position;
     
@@ -81,7 +85,7 @@
 - (CRCell*)cellAtPoint:(GLKVector2)location
 {
     float sizeOfPoint = SIZE_OF_BOX_FOR_HIT_DETECTION;
-    CGRect locationBox = CGRectMake(location.x-sizeOfPoint, location.y-sizeOfPoint, sizeOfPoint, sizeOfPoint);
+    CGRect locationBox = CGRectMake(location.x-sizeOfPoint/2, location.y-sizeOfPoint/2, sizeOfPoint, sizeOfPoint);
     
     __block CGRect box;
     __block CRCell * result;
@@ -104,6 +108,25 @@
 - (CRFood*)foodForCell:(CRCell *)cell
 {
     return [self.foodDistributionCenter foodForCell:cell];
+}
+
+- (void)deleteCell:(CRCell *)cell
+{
+    [cell enumerateVesselsUsingBlock:^(id obj, BOOL *stop) {
+        CRVessel * vessel = (CRVessel*)obj;
+        //remove vessel from cells connected to the cell
+        [[vessel otherCell:cell] removeVessel:vessel];
+        
+        [self removeChild:vessel];
+    }];
+    //remove all vessels from the cell
+    [cell removeAllVessels];
+    //remove cell
+    [self removeChild:cell];
+    [self.cells removeObject:cell];
+    
+    //later: update foodDistributionCenter
+   
 }
 
 - (void)update:(float)timeSinceLastUpdate

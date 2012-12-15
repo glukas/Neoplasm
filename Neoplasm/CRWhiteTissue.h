@@ -13,6 +13,8 @@
 @interface CRWhiteTissue : CRRenderedNode <CRSpawnerDelegate>
 
 
+- (CRFoodSource*)foodSourceAtPoint:(GLKVector2)location;
+
 
 //which spawner should be used to spawn children?
 //the tissue automatically sets itself as the delegate and responds to spawns
