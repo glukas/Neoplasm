@@ -25,3 +25,15 @@ Build/Products/Debug-iphoneos/Neoplasm.app.dSYM/Contents/Resources/DWARF/Neoplas
 *.dat
 
 *.dep
+
+*.xcbkptlist
+
+Build/Products/Debug-iphoneos/Neoplasm.app.dSYM/Contents/Resources/DWARF/Neoplasm
+
+Build/Intermediates/Neoplasm.build/Debug-iphoneos/Neoplasm.build/build-state.dat
+
+Build/Intermediates/Neoplasm.build/Debug-iphoneos/Neoplasm.build/Objects-normal/armv7s/CRCell.o
+
+Build/Intermediates/Neoplasm.build/Debug-iphoneos/Neoplasm.build/Neoplasm.dep
+
+*.xcbkptlist

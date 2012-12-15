@@ -108,7 +108,7 @@
     //todo: set pulse rate to reflect rate of consumption
     
     //if there is more food than consumption, the strength grows, otherwise it shrinks
-    float growth_factor = 0.0001;
+    float growth_factor = 0.0005;
     
     self.strength = self.strength+(food.amount-self.consumption.amount)*growth_factor;
     if (self.strength > 1) {

@@ -20,14 +20,6 @@
 
 @synthesize vertices = _vertices;
 
-
-/*
-- (void)dealloc
-{
-    glDeleteBuffers(1, &_vertexBuffer);
-    glDeleteBuffers(1, &_indexBuffer);
-}*/
-
 - (void)setThickness:(float)thickness
 {
     _thickness = thickness;
