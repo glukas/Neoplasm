@@ -1,567 +1,0 @@
-TCancer
-v5
-r1
-cCheck dependencies
-cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist
-cProcessInfoPlistFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Info.plist" Cancer/Cancer-Info.plist
-cProcessPCH "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch.pth" Cancer/Cancer-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/main.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRAppDelegate.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRAppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRNode.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRNode.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRSprite.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRScene.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRScene.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameScene.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameScene.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameViewController.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRCell.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRCell.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRPulse.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRPulse.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer" normal armv7
-cGenerateDSYMFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app.dSYM" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer"
-cCopyStringsFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/en.lproj/InfoPlist.strings" Cancer/en.lproj/InfoPlist.strings
-cCopyPNGFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default.png" Cancer/Default.png
-cCopyPNGFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default@2x.png" Cancer/Default@2x.png
-cCopyPNGFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default-568h@2x.png" Cancer/Default-568h@2x.png
-cCompileStoryboard "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/MainStoryboard.storyboard"
-cCopyPNGFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/cancer.png" Cancer/../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png
-cProcessProductPackaging "/Users/nicki/Library/MobileDevice/Provisioning Profiles/9058ADE7-14C4-48C3-B578-D1BDE0B35C8B.mobileprovision" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision"
-cProcessProductPackaging "/Users/nicki/Library/MobileDevice/Provisioning Profiles/9058ADE7-14C4-48C3-B578-D1BDE0B35C8B.mobileprovision" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision"
-cTouch "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app"
-cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcent"
-cCodeSign "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app"
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk
-c00000000509D463E0000000000000132
-t1352484414
-s306
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist
-c000000005070556E0000000000000094
-t1349539182
-s148
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist
-c000000005070556E0000000000000096
-t1349539182
-s150
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000507055710000000000322740
-t1349539185
-s3286848
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000507055740000000000629C80
-t1349539188
-s6462592
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000005070557200000000000015F7
-t1349539186
-s5623
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/GLKit.framework/GLKit
-c00000000507055720000000000098640
-t1349539186
-s624192
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-c00000000507055740000000000024190
-t1349539188
-s147856
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c00000000507055750000000000000E8D
-t1349539189
-s3725
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000005070557800000000011BA850
-t1349539192
-s18589776
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/Availability.h
-c00000000507055850000000000001B54
-t1349539205
-s6996
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcent
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRAppDelegate.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRCell.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameScene.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameViewController.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRNode.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRPulse.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRScene.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRSprite.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/Cancer.LinkFileList
-c0000000050C4A2B0000000000000060D
-t1355063984
-s1549
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/main.o
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch.pth
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app.dSYM
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default-568h@2x.png
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default.png
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default@2x.png
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Info.plist
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/MainStoryboard.storyboardc
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/PkgInfo
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/cancer.png
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/en.lproj/InfoPlist.strings
-t2
-s0
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png
-c0000000050C3874100000000000004BD
-t1354991425
-s1213
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRAppDelegate.m
-c0000000050C478310000000000000793
-t1355053105
-s1939
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRCell.m
-c0000000050C491EE000000000000016D
-t1355059694
-s365
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameScene.m
-c0000000050C4A29100000000000007F8
-t1355063953
-s2040
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameViewController.m
-c0000000050C4A2AD0000000000000D4D
-t1355063981
-s3405
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRNode.m
-c0000000050C4A1730000000000000B1E
-t1355063667
-s2846
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRPulse.m
-c0000000050C4981400000000000003B6
-t1355061268
-s950
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRScene.m
-c0000000050C49DB500000000000003B7
-t1355062709
-s951
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.m
-c0000000050C48A780000000000000C83
-t1355057784
-s3203
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/Cancer-Prefix.pch
-c0000000050C47822000000000000013B
-t1355053090
-s315
-i<Availability.h>
-i<UIKit/UIKit.h>
-i<Foundation/Foundation.h>
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/Default-568h@2x.png
-c000000005062328600000000000048A2
-t1348612742
-s18594
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/Default.png
-c0000000050623286000000000000198C
-t1348612742
-s6540
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/Default@2x.png
-c00000000506232860000000000003EEB
-t1348612742
-s16107
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/MainStoryboard.storyboard
-c0000000050C48D9300000000000008AA
-t1355058579
-s2218
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/en.lproj/InfoPlist.strings
-c0000000050C47822000000000000002D
-t1355053090
-s45
-
-N/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/main.m
-c0000000050C478220000000000000153
-t1355053090
-s339
-
-N/Users/nicki/Library/MobileDevice/Provisioning Profiles/9058ADE7-14C4-48C3-B578-D1BDE0B35C8B.mobileprovision
-c0000000050C237A70000000000001D95
-t1354905511
-s7573
-
-NCancer/Cancer-Info.plist
-c0000000050C48D4B00000000000004C9
-t1355058507
-s1225
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRAppDelegate.m"
-r0
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRCell.m"
-r0
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameScene.m"
-r0
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameViewController.m"
-r0
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRNode.m"
-r0
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRPulse.m"
-r0
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRScene.m"
-r0
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.m"
-r0
-
-CBuild AST from "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/main.m"
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies19381030da74b641^dd432e30da74b641^---0#1#0#--18"Check dependencies36"B63733BA-48BD-4A40-9983-5778228B4AE2-
-
-CCodeSign "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app"
-s376756791.517470
-e376756792.221891
-r1
-xCodeSign
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"CodeSign Build/Products/Debug-iphoneos/Cancer.app6b998437da74b641^fbcd3838da74b641^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/0000000000000000^987"CodeSign Build/Products/Debug-iphoneos/Cancer.app    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 8a6698c870238fd463a0ef7f576670f8144b27cb "--resource-rules=/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist" --entitlements "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcent" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app"36"304A42CE-9293-4BA2-B3E7-7531EBCFA18D-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRAppDelegate.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRAppDelegate.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756785.518362
-e376756785.975545
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRAppDelegate.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRAppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRAppDelegate.m23168531da74b641^4fe60732da74b641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/CRAppDelegate.m0000000000000000^4048"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRAppDelegate.o Cancer/CRAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRAppDelegate.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRAppDelegate.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRAppDelegate.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRAppDelegate.o"36"01C5CB43-0D92-4B65-9380-06FF0A72956A-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRCell.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRCell.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756786.759662
-e376756787.085890
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRCell.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRCell.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRCell.me013c332da74b641^d3131633da74b641^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/CRCell.m0000000000000000^4006"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRCell.o Cancer/CRCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRCell.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRCell.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRCell.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRCell.o"36"2ABD1030-C7F0-45ED-8020-2DBFA9B429F9-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameScene.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameScene.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756786.508942
-e376756786.758414
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameScene.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameScene.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameScene.m58758232da74b641^365ac232da74b641^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/CRGameScene.m0000000000000000^4036"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameScene.o Cancer/CRGameScene.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameScene.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameScene.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameScene.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameScene.o"36"54623B0E-A6B9-42EC-961D-229F5A024D77-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameViewController.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameViewController.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756786.724176
-e376756787.157181
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameViewController.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameViewController.mde91b932da74b641^29cb2833da74b641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/CRGameViewController.m0000000000000000^4090"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameViewController.o Cancer/CRGameViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameViewController.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameViewController.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRGameViewController.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRGameViewController.o"36"1B33D4BB-EB45-407A-AF18-5507E5370BBF-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRNode.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRNode.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756785.976963
-e376756786.507466
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRNode.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRNode.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRNode.m454bfa31da74b641^c6f78132da74b641^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/CRNode.m0000000000000000^4006"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRNode.o Cancer/CRNode.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRNode.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRNode.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRNode.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRNode.o"36"381A7DB0-B49E-4B45-9BAC-F06C50579874-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRPulse.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRPulse.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756787.087238
-e376756787.161155
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRPulse.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRPulse.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRPulse.m0a831633da74b641^c7682933da74b641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/CRPulse.m0000000000000000^4012"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRPulse.o Cancer/CRPulse.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRPulse.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRPulse.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRPulse.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRPulse.o"36"72112F27-37B5-4504-A837-0F0213C9A04F-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRScene.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRScene.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756786.483782
-e376756786.722895
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRScene.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRScene.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRScene.m4f057c32da74b641^d926b932da74b641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/CRScene.m0000000000000000^4012"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRScene.o Cancer/CRScene.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRScene.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRScene.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRScene.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRScene.o"36"07419A03-B1C1-4ACE-9B9F-0383135381CA-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRSprite.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756785.984879
-e376756786.482450
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRSprite.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.m834efc31da74b641^b7987b32da74b641^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.m0000000000000000^4018"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRSprite.o Cancer/CRSprite.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRSprite.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRSprite.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/CRSprite.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/CRSprite.o"36"A51457B9-B349-4A6E-8E01-ADA8DD474C2A-
-
-CCompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/main.o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/main.m" normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756785.510382
-e376756785.982157
-r1
-xCompileC
-xBuild/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/main.o
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/main.m36e48331da74b641^e7fd0732da74b641^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/main.m0000000000000000^3994"CompileC Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/main.o Cancer/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -include "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/main.d" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/main.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/main.m" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/main.o"36"F5BAD18E-40B6-414A-AE5E-7648259B5696-
-
-CCompileStoryboard "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/MainStoryboard.storyboard"
-s376756788.920344
-e376756791.426411
-r1
-xCompileStoryboard
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/MainStoryboard.storyboard
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"CompileStoryboard Cancer/MainStoryboard.storyboard67b6eb34da74b641^363f6e37da74b641^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/MainStoryboard.storyboard0000000000000000^973"CompileStoryboard Cancer/MainStoryboard.storyboard    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/MainStoryboard.storyboardc" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/MainStoryboard.storyboard" --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk36"0859E8CE-57CB-46F4-A289-AF69E1831C47-
-
-CCopyPNGFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default-568h@2x.png" Cancer/Default-568h@2x.png
-s376756788.867000
-e376756788.990458
-r1
-xCopyPNGFile
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default-568h@2x.png
-xCancer/Default-568h@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"CopyPNGFile Build/Products/Debug-iphoneos/Cancer.app/Default-568h@2x.png Cancer/Default-568h@2x.png5b0cde34da74b641^3f8ffd34da74b641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/Default-568h@2x.png0000000000000000^741"CopyPNGFile "Build/Products/Debug-iphoneos/Cancer.app/Default-568h@2x.png" "Cancer/Default-568h@2x.png"    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/Default-568h@2x.png" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default-568h@2x.png"36"14C4E8A0-40EA-4BC9-AAD3-9F0CD0E6C197-
-
-CCopyPNGFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default.png" Cancer/Default.png
-s376756788.031371
-e376756788.865642
-r1
-xCopyPNGFile
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default.png
-xCancer/Default.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"CopyPNGFile Build/Products/Debug-iphoneos/Cancer.app/Default.png Cancer/Default.png992e0834da74b641^d89add34da74b641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/Default.png0000000000000000^705"CopyPNGFile Build/Products/Debug-iphoneos/Cancer.app/Default.png Cancer/Default.png    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/Default.png" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default.png"36"6C99D738-F638-4122-A04C-3B1AFA9AACF7-
-
-CCopyPNGFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default@2x.png" Cancer/Default@2x.png
-s376756788.036755
-e376756788.918972
-r1
-xCopyPNGFile
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default@2x.png
-xCancer/Default@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"CopyPNGFile Build/Products/Debug-iphoneos/Cancer.app/Default@2x.png Cancer/Default@2x.png9f900934da74b641^4a41eb34da74b641^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/Default@2x.png0000000000000000^721"CopyPNGFile "Build/Products/Debug-iphoneos/Cancer.app/Default@2x.png" "Cancer/Default@2x.png"    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/Default@2x.png" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Default@2x.png"36"E5F4165B-E9C9-4E18-9F04-214B79169343-
-
-CCopyPNGFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/cancer.png" Cancer/../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png
-s376756788.991798
-e376756789.033812
-r1
-xCopyPNGFile
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/cancer.png
-xCancer/../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"CopyPNGFile Build/Products/Debug-iphoneos/Cancer.app/cancer.png Cancer/../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png6c08fe34da74b641^73ba0835da74b641^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png0000000000000000^811"CopyPNGFile Build/Products/Debug-iphoneos/Cancer.app/cancer.png Cancer/../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/../../../../../../Developer/iOS/Own/GLTest/GLHelloGame/cancer.png" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/cancer.png"36"721B0A4F-77DB-4548-A3BB-5C058717935F-
-
-CCopyStringsFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/en.lproj/InfoPlist.strings" Cancer/en.lproj/InfoPlist.strings
-s376756788.030107
-e376756788.035396
-r1
-xCopyStringsFile
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/en.lproj/InfoPlist.strings
-xCancer/en.lproj/InfoPlist.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Copy Cancer/en.lproj/InfoPlist.stringsaeef0734da74b641^85220934da74b641^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/en.lproj/InfoPlist.strings0000000000000000^650"CopyStringsFile Build/Products/Debug-iphoneos/Cancer.app/en.lproj/InfoPlist.strings Cancer/en.lproj/InfoPlist.strings    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/en.lproj" -- Cancer/en.lproj/InfoPlist.strings36"3FBCCC54-68EC-4D51-A8EA-F270E5596E55-
-
-CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist
-s376756784.231118
-e376756784.248734
-r1
-xCpResource
-x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist
-xBuild/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy Build/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist06103e30da74b641^a2624430da74b641^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist000000000080d041^824"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app"36"788D1E85-5BD3-4A80-B987-59F8085531DF-
-
-CGenerateDSYMFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app.dSYM" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer"
-s376756787.961240
-e376756788.021168
-r1
-xGenerateDSYMFile
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app.dSYM
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Generating /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app.dSYM6534f633da74b641^317b0534da74b641^---0#0#0#-19%DVTDocumentLocation2@145"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app.dSYM000000000080d041^743"GenerateDSYMFile Build/Products/Debug-iphoneos/Cancer.app.dSYM Build/Products/Debug-iphoneos/Cancer.app/Cancer    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app.dSYM"36"D3BFAB28-4BF2-4103-839A-E45413E35142-
-
-CLd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer" normal armv7
-s376756787.168675
-e376756787.953262
-r1
-xLd
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer
-xnormal
-xarmv7
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Link /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancerfd4e2b33da74b641^390af433da74b641^---0#0#0#--1319"Ld Build/Products/Debug-iphoneos/Cancer.app/Cancer normal armv7    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk "-L/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" -filelist "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Objects-normal/armv7/Cancer.LinkFileList" -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -framework OpenGLES -framework GLKit -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Cancer"36"BA054537-A097-43D9-9020-266B5BA0AA98-
-
-CProcessInfoPlistFile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Info.plist" Cancer/Cancer-Info.plist
-s376756784.231999
-e376756784.249521
-r1
-xProcessInfoPlistFile
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Info.plist
-xCancer/Cancer-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Process Cancer/Cancer-Info.plist910f3e30da74b641^6a6b4430da74b641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/Cancer-Info.plist0000000000000000^918"ProcessInfoPlistFile Build/Products/Debug-iphoneos/Cancer.app/Info.plist Cancer/Cancer-Info.plist    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Cancer/Cancer-Info.plist -genpkginfo "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/ResourceRules.plist" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/Info.plist"36"6D8835F2-99B7-481F-9BD3-19CE4244FF58-
-
-CProcessPCH "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch.pth" Cancer/Cancer-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s376756784.258976
-e376756785.498403
-r1
-xProcessPCH
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch.pth
-xCancer/Cancer-Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Precompile Cancer/Cancer-Prefix.pch8d7c4230da74b641^ef8e8031da74b641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Cancer/Cancer-Prefix.pch0000000000000000^3892"ProcessPCH Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch.pth Cancer/Cancer-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=6.0 -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-generated-files.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-own-target-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-all-target-headers.hmap" -iquote "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer-project-headers.hmap" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources/armv7" "-I/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/DerivedSources" "-F/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos" --serialize-diagnostics "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch.dia" -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Cancer/Cancer-Prefix.pch" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch.pth" -MMD -MT dependencies -MF "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/PrecompiledHeaders/Cancer-Prefix-bggyajzeyqjgmqfkhqpihftxqhij/Cancer-Prefix.pch.d"36"4D7D5A91-EA9E-4DEA-A5B9-D3DC05DD22D5-
-
-CProcessPCH /Users/nicki/Library/Developer/Xcode/DerivedData/Cancer-eqamoyhmphpvnwapgpsataticdea/Index/PrecompiledHeaders/Cancer-Prefix-cyxqzlslggqkeqenptwqsjchgmhs_ast/Cancer-Prefix.pch.pth Cancer/Cancer-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessProductPackaging "/Users/nicki/Library/MobileDevice/Provisioning Profiles/9058ADE7-14C4-48C3-B578-D1BDE0B35C8B.mobileprovision" "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision"
-s376756791.468193
-e376756791.472771
-r1
-xProcessProductPackaging
-x/Users/nicki/Library/MobileDevice/Provisioning Profiles/9058ADE7-14C4-48C3-B578-D1BDE0B35C8B.mobileprovision
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection200"ProcessProductPackaging "/Users/nicki/Library/MobileDevice/Provisioning Profiles/9058ADE7-14C4-48C3-B578-D1BDE0B35C8B.mobileprovision" Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision27f77737da74b641^331a7937da74b641^---0#0#0#-19%DVTDocumentLocation2@165"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision0000000000000000^772"ProcessProductPackaging "/Users/nicki/Library/MobileDevice/Provisioning Profiles/9058ADE7-14C4-48C3-B578-D1BDE0B35C8B.mobileprovision" Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/nicki/Library/MobileDevice/Provisioning Profiles/9058ADE7-14C4-48C3-B578-D1BDE0B35C8B.mobileprovision" -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app/embedded.mobileprovision"36"59132D3E-BDF6-4818-B1D8-1A880ABBE286-
-
-CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcent"
-s376756791.502059
-e376756791.508730
-r1
-xProcessProductPackaging
-x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcent
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection218"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcentcaa68037da74b641^984f8237da74b641^---0#0#0#-19%DVTDocumentLocation2@173"file://localhost/Users/nicki/Desktop/ETH/Einfuhrung%20in%20die%20Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcent000000000080d041^834"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcent    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist -entitlements -format xml -o "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Intermediates/Cancer.build/Debug-iphoneos/Cancer.build/Cancer.xcent"36"CB174671-6A64-4587-B4DE-704698A25BF8-
-
-CTouch "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app"
-s376756791.481589
-e376756791.493267
-r1
-xTouch
-x/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Touch /Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.appc3677b37da74b641^60587e37da74b641^---0#0#0#--465"Touch Build/Products/Debug-iphoneos/Cancer.app    cd "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/nicki/Desktop/ETH/Einfuhrung in die Programmierung/Final/Cancer/Cancer/Build/Products/Debug-iphoneos/Cancer.app"36"8D6BE794-F8EE-431C-8FB6-B3FEE0941166-
-
