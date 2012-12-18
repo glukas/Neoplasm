@@ -38,3 +38,5 @@ Build/Intermediates/Neoplasm.build/Debug-iphoneos/Neoplasm.build/Objects-normal/
 Build/Intermediates/Neoplasm.build/Debug-iphoneos/Neoplasm.build/Neoplasm.dep
 
 *.xcbkptlist
+
+Neoplasm.xcodeproj/xcuserdata/nicki.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
