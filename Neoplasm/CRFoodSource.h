@@ -21,8 +21,8 @@
 //the food produced per second
 - (CRFood*)foodProduced;
 
--//Which cell is consuming the food source?
--//nil if none
+//Which cell is consuming the food source?
+//nil if none
 @property (nonatomic, weak) CRCell * consumer;
 
 @end

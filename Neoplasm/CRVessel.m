@@ -9,6 +9,8 @@
 #import "CRVessel.h"
 #import "CRGeometry.h"
 
+#define CR_VESSEL_DEFAULT_THICKNESS 8
+
 @interface  CRVessel()
 
 @property (assign) ColoredQuad vertices;
@@ -19,11 +21,19 @@
 @implementation CRVessel
 
 @synthesize vertices = _vertices;
+@synthesize thickness = _thickness;
 
 - (void)setThickness:(float)thickness
 {
     _thickness = thickness;
     [self recalculateVertices];
+}
+
+- (float)thickness
+{
+    if (!_thickness) {
+        _thickness = CR_VESSEL_DEFAULT_THICKNESS;
+    } return _thickness;
 }
 
 
@@ -87,6 +97,14 @@
     newVertices.tl.spaceCoordinate = CGPointMake(p3.x, p3.y);
     newVertices.tr.spaceCoordinate = CGPointMake(p4.x, p4.y);
     
+    newVertices.bl.Color[0] = 0;
+    newVertices.br.Color[0] = 0;
+    newVertices.tr.Color[0] = 0;
+    newVertices.tl.Color[0] = 0;
+    newVertices.bl.Color[1] = 0;
+    newVertices.br.Color[1] = 0;
+    newVertices.tr.Color[1] = 0;
+    newVertices.tl.Color[1] = 0;
     self.vertices = newVertices;
     
 }

@@ -30,6 +30,8 @@ float _minScale = 0.08;
 
 @property (readonly) BOOL userIsCreatingANewCell;
 @property (nonatomic) CRCell * activeCell; //(creating a new cell next to it)
+
+@property (nonatomic, strong) CRVessel * activeVessel; //a vessel node used as visual feedback for node creation
 @end
 
 @implementation CRGameScene
@@ -238,8 +240,14 @@ float _scaleForNextUpdate;
         //if the user presses a cell, start creating a new child cell
         CRCell * cell = [self.neoplasm cellAtPoint:glvector];
         if (cell) {
+            //indicate creation state to user
             cell.pulsate = NO;
             self.activeCell = cell;
+            
+            self.activeVessel = [[CRVessel alloc] initWithEffect:self.effect];
+            [self addChild:self.activeVessel];
+            self.activeVessel.startPoint = cell.position;
+            self.activeVessel.endPoint = cell.position;
         }
         
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {
@@ -248,19 +256,31 @@ float _scaleForNextUpdate;
             CRCell * cell = [self.neoplasm cellAtPoint:glvector];
             CRFoodSource * foodSource = [self.whiteTissue foodSourceAtPoint:glvector];
             if (cell) {
+                //create new node
                 [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
             } else if (foodSource) {
+                //connect to new foodcell and create new node
                 CRCell * newCell = [self.neoplasm newNeighborToCell:self.activeCell atLocation:foodSource.position];
                 [self.neoplasm addFoodSouce:foodSource toCell:newCell];
             } else {
+                //just create a new node
                 [self.neoplasm newNeighborToCell:self.activeCell atLocation:glvector];
             }
+            
+            
+            //reset state
+            if (self.activeVessel) {
+                [self removeChild:self.activeVessel];
+                self.activeVessel = nil;
+            }
+            
             self.activeCell.pulsate = YES;
             self.activeCell = nil;
         }
         
     }
 }
+
 - (void)handlePinch:(UIPinchGestureRecognizer*)gesture
 {
     if (gesture.state == UIGestureRecognizerStateChanged) {
@@ -280,7 +300,15 @@ float _scaleForNextUpdate;
 
 - (void)update:(float)timeSinceLastUpdate
 {
+    if (self.activeVessel) {
+        //if creating a new cell, update position of vessel used for feedback
+        CGPoint touchLocation = [self.pressGesture locationInView:self.view];
+        GLKVector2 glvector = [self toGLVectorFromMainView:touchLocation];
+        self.activeVessel.endPoint = glvector;
+    }
+    
     [super update:timeSinceLastUpdate];
+    
     
     //update color of background
     [self.pulse update:timeSinceLastUpdate];

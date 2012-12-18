@@ -40,3 +40,5 @@ Build/Intermediates/Neoplasm.build/Debug-iphoneos/Neoplasm.build/Neoplasm.dep
 *.xcbkptlist
 
 Neoplasm.xcodeproj/xcuserdata/nicki.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
+
+Neoplasm.xcodeproj/project.pbxproj
