@@ -11,7 +11,7 @@
 #import "CRPulse.h"
 #import "CRWhiteTissue.h"
 
-#define MIN_DURATION_FOR_NODE_CREATION 0.17
+#define MIN_DURATION_FOR_NODE_CREATION 0.1
 
 float _minScale = 0.08;
 
@@ -191,7 +191,7 @@ float _scaleForNextUpdate;
 
 - (void)handleTap:(UITapGestureRecognizer*)recognizer
 {
-    
+    self.activeCell = nil;
         if (GLKVector2Length(self.positionVelocity) > 1) {
             self.positionVelocity = GLKVector2Make(0, 0);
         } else {
@@ -250,7 +250,8 @@ float _scaleForNextUpdate;
             if (cell) {
                 [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
             } else if (foodSource) {
-                [self.neoplasm newNeighborToCell:self.activeCell atLocation:foodSource.position];
+                CRCell * newCell = [self.neoplasm newNeighborToCell:self.activeCell atLocation:foodSource.position];
+                [self.neoplasm addFoodSouce:foodSource toCell:newCell];
             } else {
                 [self.neoplasm newNeighborToCell:self.activeCell atLocation:glvector];
             }

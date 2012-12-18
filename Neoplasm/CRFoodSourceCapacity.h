@@ -11,4 +11,6 @@
 
 @interface CRFoodSourceCapacity : CRFood
 
+@property (nonatomic, strong) CRFood * initialCapacity;
+
 @end

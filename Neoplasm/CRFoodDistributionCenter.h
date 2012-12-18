@@ -10,14 +10,14 @@
 //  It can query how much food cells have received since the last update
 
 #import <Foundation/Foundation.h>
-#import "CRFoodSource.h"
 #import "CRFood.h"
+#import "CRCell.h"
 
 @interface CRFoodDistributionCenter : NSObject
 
-- (void)update:(float)timeSinceLastUpdate;
+- (void)addCell:(CRCell*)cell;
 
-- (void)addFoodSource:(CRFoodSource*)source;
+- (void)removeCell:(CRCell*)cell;
 
 //food per second for this cell
 - (CRFood*)foodForCell:(CRCell*)cell;

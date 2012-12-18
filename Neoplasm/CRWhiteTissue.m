@@ -81,7 +81,7 @@
 
 - (CRFoodSource*)addNewCellAtPoint:(GLKVector2)location
 {
-    CRFoodSource * cell = [[CRFoodSource alloc] initWithEffect:self.effect capacity:[[CRFoodSourceCapacity alloc] initWithAmount:40+drand48()*64]];
+    CRFoodSource * cell = [[CRFoodSource alloc] initWithEffect:self.effect capacity:[[CRFoodSourceCapacity alloc] initWithAmount:120+drand48()*30]];
     
     //cell.delegate = self;
     cell.position = location;

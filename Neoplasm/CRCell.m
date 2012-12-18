@@ -36,7 +36,7 @@
     self = [super initWithFile:@"cancer.png" effect:effect];
     if (self) {
         _strength = 0.5;
-        _consumption = [CRFood foodWithAmount:12];
+        _consumption = [CRFood foodWithAmount:1];
     } return self;
     
 }
@@ -67,7 +67,7 @@
 //stub
 - (BOOL)isStarving
 {
-    return NO;
+    return [self.delegate foodForCell:self].amount < self.consumption.amount;
 }
 
 
@@ -126,12 +126,18 @@
     //todo: set pulse rate to reflect rate of consumption
     
     //if there is more food than consumption, the strength grows, otherwise it shrinks
-    float growth_factor = 0.01;
-    
+    float growth_factor;
+    if (food.amount > self.consumption.amount) {
+        growth_factor = 0.01;
+    } else {
+        growth_factor = 0.05;
+    }
+        
     self.strength = self.strength+timeSinceLastUpdate*(food.amount-self.consumption.amount)*growth_factor;
     if (self.strength > 1) {
         self.strength = 1;
-    } else if (self.strength <= 0.15) {
+    }
+    if (self.strength <= 0.15) {
         [self.delegate deleteCell:self];
     } else {
         self.scale = (self.strength + self.strength*self.pulse.pulse)/2;

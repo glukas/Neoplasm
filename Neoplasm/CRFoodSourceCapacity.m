@@ -10,4 +10,13 @@
 
 @implementation CRFoodSourceCapacity
 
+- (id)initWithAmount:(float)amount
+{
+    self = [super initWithAmount:amount];
+    if (self) {
+        _initialCapacity = [CRFood foodWithAmount:amount];
+    } return self;
+}
+
 @end
+

@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CRFoodSource.h"
+#import "CRCell.h"
 
 @interface CRFoodFlow : NSObject
 

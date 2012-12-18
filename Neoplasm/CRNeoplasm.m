@@ -43,12 +43,13 @@
 }
 
 
-- (void)newNeighborToCell:(CRCell *)cell atLocation:(GLKVector2)location
+- (CRCell*)newNeighborToCell:(CRCell *)cell atLocation:(GLKVector2)location
 {
     CRCell * newCell = [self addNewCellAtPoint:location];
     if (cell) {
         [self newVesselBetweenCell:cell andOtherCell:newCell];
     }
+    return newCell;
 }
 
 - (void)newVesselBetweenCell:(CRCell *)cell1 andOtherCell:(CRCell *)cell2
@@ -78,7 +79,7 @@
     
     [self.children addObject:cell];
     [self.cells addObject:cell];
-    
+    [self.foodDistributionCenter addCell:cell];
     return cell;
 }
 
@@ -105,10 +106,19 @@
 }
 
 
+- (void)addFoodSouce:(CRFoodSource*)food toCell:(CRCell *)cell
+{
+    cell.foodSource = food;
+    food.consumer = cell;
+    [self.foodDistributionCenter addCell:cell];
+}
+
 - (CRFood*)foodForCell:(CRCell *)cell
 {
     return [self.foodDistributionCenter foodForCell:cell];
 }
+
+
 
 - (void)deleteCell:(CRCell *)cell
 {
@@ -121,17 +131,19 @@
     }];
     //remove all vessels from the cell
     [cell removeAllVessels];
+    //cell.foodSource.consumer = nil;
+    //cell.foodSource = nil;
     //remove cell
     [self removeChild:cell];
     [self.cells removeObject:cell];
-    
+    [self.foodDistributionCenter removeCell:cell];
     //later: update foodDistributionCenter
    
 }
 
 - (void)update:(float)timeSinceLastUpdate
 {
-    [self.foodDistributionCenter update:timeSinceLastUpdate];
+    //[self.foodDistributionCenter update:timeSinceLastUpdate];
     [super update:timeSinceLastUpdate];
 }
 

@@ -8,6 +8,7 @@
 
 #import "CRRenderedNode.h"
 #import "CRCell.h"
+#import "CRFoodSource.h"
 
 @interface CRNeoplasm : CRRenderedNode <CRCellDelegate>
 
@@ -17,8 +18,10 @@
 
 - (CRCell *)cellAtPoint:(GLKVector2)location;
 
-- (void)newNeighborToCell:(CRCell*)cell atLocation:(GLKVector2)location;
+- (CRCell *)newNeighborToCell:(CRCell*)cell atLocation:(GLKVector2)location;
 
 - (void)newVesselBetweenCell:(CRCell*)cell1 andOtherCell:(CRCell*)cell2;
+
+- (void)addFoodSouce:(CRFoodSource*)food toCell:(CRCell*)cell;
 
 @end

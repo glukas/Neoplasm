@@ -12,6 +12,7 @@
 @interface CRFoodSource()
 @property (nonatomic, strong) CRFoodSourceCapacity * capacity;
 @property (nonatomic, strong) CRPulse * pulse;
+@property (nonatomic) float depletionRate;
 @end
 
 @implementation CRFoodSource
@@ -25,6 +26,7 @@
         
         _capacity = capacity;
         _pulse = [CRPulse pulseWithBPM:20];
+        _depletionRate = 4;
     } return self;
 }
 
@@ -32,10 +34,22 @@
 - (CRFood*)foodProduced
 {
     CRFood * produced;
-    if (self.consumer) {
-        
+    if (self.capacity.amount > self.depletionRate) {
+        produced = [CRFood foodWithAmount:self.depletionRate];
+    } else {
+        produced = [CRFood foodWithAmount:self.capacity.amount];
     }
     return produced;
+}
+
+- (void)deplete:(float)time
+{
+    if (self.capacity.amount > (time*self.depletionRate)) {
+        self.capacity.amount = self.capacity.amount-time*self.depletionRate;
+    } else if (self.capacity.amount > 0) {
+        self.capacity.amount = 0;
+        NSLog(@"%@ depleted", self);
+    }
 }
 
 
@@ -43,7 +57,10 @@
 {
     [super update:timeSinceLastUpdate];
     [self.pulse update:timeSinceLastUpdate];
-    self.scale = self.capacity.amount * 0.0025 * (1 + self.pulse.pulse);
+    if (self.consumer) {
+        [self deplete:timeSinceLastUpdate];
+    }
+    self.scale = 0.1+self.capacity.amount * 0.0015 * (0.9+self.pulse.pulse);
 }
 
 @end

@@ -7,10 +7,12 @@
 //
 
 #import "CRSprite.h"
-#import "CRFood.h"
+#import "CRFoodSource.h"
 #import "CRVessel.h"
+#import "CRFood.h"
 
 @class CRCell;
+@class CRFoodSource;
 @class CRVessel;
 
 @protocol CRCellDelegate <NSObject>
@@ -39,6 +41,12 @@
 #pragma mark delegate
 
 @property (nonatomic, weak) id <CRCellDelegate> delegate;
+
+#pragma mark food
+
+//The Food source directly associated with this cell
+@property (nonatomic, weak) CRFoodSource * foodSource;
+
 
 #pragma mark connections to other cells
 

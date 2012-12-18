@@ -26,6 +26,7 @@
     [self recalculateVertices];
 }
 
+
 - (void)setStartPoint:(GLKVector2)startPoint
 {
     _startPoint = startPoint;
@@ -37,6 +38,19 @@
     _endPoint = endPoint;
     [self recalculateVertices];
 }
+ 
+/*
+- (void)setCell1:(CRCell *)cell1
+{
+    _cell1 = cell1;
+    [self recalculateVertices];
+}
+
+- (void)setCell2:(CRCell *)cell2
+{
+    _cell2 = _cell2;
+    [self recalculateVertices];
+}*/
 
 
 - (CRCell*)otherCell:(CRCell *)cell
