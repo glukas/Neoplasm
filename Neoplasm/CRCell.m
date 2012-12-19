@@ -64,7 +64,7 @@
 
 
 #pragma mark food
-//stub
+
 - (BOOL)isStarving
 {
     return [self.delegate foodForCell:self].amount < self.consumption.amount;
@@ -110,7 +110,7 @@
 
 
 
-#pragma mark state
+#pragma mark CRNode
 
 - (void)update:(float)timeSinceLastUpdate
 {
@@ -138,11 +138,31 @@
         self.strength = 1;
     }
     if (self.strength <= 0.15) {
-        [self.delegate deleteCell:self];
+        [self enumerateParentsUsingBlock:^(CRNode *obj, BOOL *stop) {
+            [obj removeChild:self];
+        }];
     } else {
         self.scale = (self.strength + self.strength*self.pulse.pulse)/2;
     }
     
+}
+
+
+
+
+- (void)prepareForDeletion
+{
+    [self enumerateVesselsUsingBlock:^(id obj, BOOL *stop) {
+        CRVessel * vessel = (CRVessel*)obj;
+        //remove vessel from cells connected to the cell
+        [[vessel otherCell:self] removeVessel:vessel];
+        
+        [vessel enumerateParentsUsingBlock:^(CRNode *obj, BOOL *stop) {
+            [obj removeChild:vessel];
+        }];
+    }];
+    //remove all vessels from the cell
+    [self removeAllVessels];
 }
 
 

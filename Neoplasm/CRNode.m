@@ -10,15 +10,24 @@
 
 @interface  CRNode()
 @property (nonatomic, strong) NSMutableArray * nodesToDelete;
+@property (nonatomic, strong) NSMutableOrderedSet * children;
+@property (nonatomic, strong) NSMutableOrderedSet * parents;
 @end
 
 @implementation CRNode
 
-- (NSMutableArray *)children
+- (NSMutableOrderedSet *)children
 {
     if (!_children) {
-        _children = [NSMutableArray array];
+        _children = [NSMutableOrderedSet orderedSet];
     } return _children;
+}
+
+- (NSMutableOrderedSet *)parents
+{
+    if (!_parents) {
+        _parents = [NSMutableOrderedSet orderedSet];
+    } return _parents;
 }
 
 - (NSMutableArray *)nodesToDelete
@@ -33,7 +42,7 @@
     self = [super init];
     if (self) {
         self.scale = 1.0;
-        self.anchorPoint = GLKVector2Make(0.5, 0.5);
+        self.anchorPoint = GLKVector2Make(1.0/2, 1.0/2);
     }
     return self;
 }
@@ -116,16 +125,67 @@
     return CGRectApplyAffineTransform(rect, transform);
 }
 
+
 #pragma mark hierarchy
 
 - (void)addChild:(CRNode *)child
 {
+    [child.parents addObject:self];
     [self.children addObject:child];
 }
 
 - (void)removeChild:(CRNode *)child
 {
-    [self.nodesToDelete addObject:child];
+    if (child) {
+        [child prepareForDeletion];
+        [self willRemoveChild:child];
+        [self.nodesToDelete addObject:child];
+        [child.parents removeObject:self];
+    }
 }
+
+- (void)enumerateChildrenUsingBlock:(void (^)(CRNode*, BOOL *))block
+{
+    [self.children enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        block((CRNode*)obj, stop);
+    }];
+}
+
+- (void)enumerateParentsUsingBlock:(void (^)(CRNode *, BOOL *))block
+{
+    [self.parents enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        block((CRNode*)obj, stop);
+    }];
+}
+
+- (void)moveToBottom:(CRNode *)child
+{
+    NSUInteger index = [self.children indexOfObject:child];
+    if (index != NSNotFound) {
+        [self.children moveObjectsAtIndexes:[NSIndexSet indexSetWithIndex:index] toIndex:0];
+    }
+}
+
+
+- (void)moveToTop:(CRNode *)child
+{
+    NSUInteger index = [self.children indexOfObject:child];
+    if (index != NSNotFound) {
+        [self.children moveObjectsAtIndexes:[NSIndexSet indexSetWithIndex:index] toIndex:self.children.count-1];
+    }
+}
+
+- (void)willRemoveChild:(CRNode*)child
+{
+    
+}
+
+- (void)prepareForDeletion
+{
+    
+}
+
+#pragma mark private
+
 
 @end

@@ -65,7 +65,7 @@
         vessel.startPoint = cell1.position;
         vessel.endPoint = cell2.position;
     
-        [self.children addObject:vessel];
+        [self addChild:vessel];
     }
 }
 
@@ -77,7 +77,7 @@
     cell.position = location;
     cell.pulsate = YES;
     
-    [self.children addObject:cell];
+    [self addChild:cell];
     [self.cells addObject:cell];
     [self.foodDistributionCenter addCell:cell];
     return cell;
@@ -118,27 +118,13 @@
     return [self.foodDistributionCenter foodForCell:cell];
 }
 
-
-
-- (void)deleteCell:(CRCell *)cell
+- (void)willRemoveChild:(CRNode *)child
 {
-    [cell enumerateVesselsUsingBlock:^(id obj, BOOL *stop) {
-        CRVessel * vessel = (CRVessel*)obj;
-        //remove vessel from cells connected to the cell
-        [[vessel otherCell:cell] removeVessel:vessel];
-        
-        [self removeChild:vessel];
-    }];
-    //remove all vessels from the cell
-    [cell removeAllVessels];
-    //cell.foodSource.consumer = nil;
-    //cell.foodSource = nil;
-    //remove cell
-    [self removeChild:cell];
-    [self.cells removeObject:cell];
-    [self.foodDistributionCenter removeCell:cell];
-    //later: update foodDistributionCenter
-   
+    if ([child isKindOfClass:[CRCell class]]) {
+        [self.cells removeObject:child];
+        [self.foodDistributionCenter removeCell:(CRCell*)child];
+        //later: update foodDistributionCenter
+    }
 }
 
 - (void)update:(float)timeSinceLastUpdate

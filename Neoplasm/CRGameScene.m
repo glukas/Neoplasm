@@ -52,12 +52,16 @@ float _scaleForNextUpdate;
     
     scene.whiteTissue = [[CRWhiteTissue alloc] initWithEffect:effect];
     scene.whiteTissue.foodSpawner = [[CRSpawner alloc] init];
+    
     [scene.whiteTissue.foodSpawner setBounds:GLKVector4Make(1000, -1000, 1000, -1000)];
-    [scene.children addObject:scene.whiteTissue];
+    
     [scene.whiteTissue.foodSpawner spawnLocations:30];
     
     scene.neoplasm = [CRNeoplasm neoplasmWithEffect:effect initialCellAtPoint:GLKVector2Make(100, 200)];
-    [scene.children addObject:scene.neoplasm];
+    [scene addChild:scene.whiteTissue];
+    [scene addChild:scene.neoplasm];
+
+    [scene moveToBottom:scene.neoplasm];
     return scene;
 }
 
@@ -248,6 +252,7 @@ float _scaleForNextUpdate;
             [self addChild:self.activeVessel];
             self.activeVessel.startPoint = cell.position;
             self.activeVessel.endPoint = cell.position;
+            [self moveToBottom:self.activeVessel];
         }
         
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {

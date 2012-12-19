@@ -29,10 +29,21 @@
 
 - (void)removeChild:(CRNode *)child;
 
-//changing this property is dangerous!
-//it should be made internal in the future
-@property (nonatomic, strong) NSMutableArray * children;
+- (void)moveToTop:(CRNode*)child;
 
+- (void)moveToBottom:(CRNode*)child;
+
+- (void)enumerateChildrenUsingBlock:(void (^)(CRNode * obj, BOOL *stop))block;
+
+- (void)enumerateParentsUsingBlock:(void (^)(CRNode * obj, BOOL *stop))block;
+
+//this method gets called immediately before removeChild: gets called
+//you should abandon any references to the child if it is removed and you don't need it anymore
+- (void)willRemoveChild:(CRNode*)child;
+
+
+//this method gets called before the node gets removed from the view hierarchy
+- (void)prepareForDeletion;
 
 //geometric properties of the node
 

@@ -66,7 +66,7 @@
     __block CRFoodSource * result;
     
     //test for collision
-    [self.children enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL *stop) {
+    [self enumerateChildrenUsingBlock:^(id obj, BOOL *stop) {
         CRFoodSource * source = obj;
         box = source.boundingBox;
         
@@ -87,7 +87,7 @@
     cell.position = location;
     //cell.pulsate = YES;
     
-    [self.children addObject:cell];
+    [self addChild:cell];
     [self.cells addObject:cell];
     
     return cell;
@@ -97,6 +97,13 @@
 - (void)CRSpawner:(CRSpawner *)spawer spawnedObjectAtLocation:(GLKVector2)location
 {
     [self addNewCellAtPoint:location];
+}
+
+- (void)willRemoveChild:(CRNode *)child
+{
+    if ([child isKindOfClass:[CRFoodSource class]]) {
+        [self.cells removeObject:child];
+    }
 }
 
 @end

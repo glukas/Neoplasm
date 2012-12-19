@@ -17,10 +17,6 @@
 
 @protocol CRCellDelegate <NSObject>
 - (CRFood*)foodForCell:(CRCell*)cell;
-
-//prompts the delegate to delete this cell
-- (void)deleteCell:(CRCell*)cell;
-
 @end
 
 
@@ -56,8 +52,9 @@
 
 - (void)removeAllVessels;
 
-//set stop to YES if you dont want to stop traversal early
+//set stop to YES if you want to stop traversal early
 - (void)enumerateNeighborsUsingBlock:(void (^)(id obj, BOOL *stop))block;
 
 - (void)enumerateVesselsUsingBlock:(void (^)(id obj, BOOL *stop))block;
+
 @end

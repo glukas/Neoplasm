@@ -48,6 +48,9 @@
         self.capacity.amount = self.capacity.amount-time*self.depletionRate;
     } else if (self.capacity.amount > 0) {
         self.capacity.amount = 0;
+        [self enumerateParentsUsingBlock:^(CRNode *obj, BOOL *stop) {
+            [obj removeChild:self];
+        }];
         NSLog(@"%@ depleted", self);
     }
 }
@@ -60,7 +63,7 @@
     if (self.consumer) {
         [self deplete:timeSinceLastUpdate];
     }
-    self.scale = 0.1+self.capacity.amount * 0.0015 * (0.9+self.pulse.pulse);
+    self.scale = 0.001+self.capacity.amount * 0.0015 * (0.93+self.pulse.pulse);
 }
 
 @end
