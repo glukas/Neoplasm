@@ -160,7 +160,7 @@ float _scaleForNextUpdate;
 {
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         //determine if the user wants to pan the view or create a new node
-        //CGPoint velocity = [recognizer velocityInView:recognizer.view];
+        
         
         //if (sqrt(powf(velocity.x, 2) + powf(velocity.y, 2)) < ) {
         //    self.userIsCreatingANewCell = YES;
@@ -188,8 +188,11 @@ float _scaleForNextUpdate;
         //
 
         self.activeCell = nil;
-        
-        //self.positionVelocity = GLKVector2Make(velocity.x, -velocity.y);
+        CGPoint velocity = [recognizer velocityInView:recognizer.view];
+        GLKVector2 velocitygl = GLKVector2Make(velocity.x, -velocity.y);
+        if (GLKVector2Length(velocitygl) > 70) {
+            self.positionVelocity = velocitygl;
+        }
     }
 }
 
@@ -198,39 +201,6 @@ float _scaleForNextUpdate;
 - (void)handleTap:(UITapGestureRecognizer*)recognizer
 {
     self.activeCell = nil;
-        if (GLKVector2Length(self.positionVelocity) > 1) {
-            self.positionVelocity = GLKVector2Make(0, 0);
-        } else {
-            //CGPoint touchLocation = [recognizer locationInView:recognizer.view];
-
-            //GLKVector2 glvector = [self toGLVectorFromMainView:touchLocation];
-            
-            //[self newCellAtPoint:glvector];
-        }
-    
-
-    
-    
-    //if (tap.state == UIGestureRecognizerStateEnded) {
-    //GLKVector2 location = [self toGLVectorFromMainView:[tap locationInView:self.view]];
-        
-        
-        /* 
-         GHCell * intersectingCell;
-         for (GHCell * cell in self.cells) {
-         if (CGRectIntersectsRect(cell.boundingBox, CGRectMake(location.x-10, location.y-10, 20, 20))) {
-         intersectingCell = cell;
-         }
-         }
-         if (intersectingCell) {
-         intersectingCell.pulsate = NO;
-         } else {*/
-        
-        /*}*/
-        
-        
-        
-    //}
 }
 
 //press is activated after Min_duration_for_node_creation
@@ -239,7 +209,7 @@ float _scaleForNextUpdate;
     //get the location of the touch both in screen and world coordinates
     CGPoint touchLocation = [recognizer locationInView:recognizer.view];
     GLKVector2 glvector = [self toGLVectorFromMainView:touchLocation];
-    
+    self.positionVelocity = GLKVector2Make(0, 0);
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         //if the user presses a cell, start creating a new child cell
         CRCell * cell = [self.neoplasm cellAtPoint:glvector];
@@ -260,13 +230,13 @@ float _scaleForNextUpdate;
         if (self.userIsCreatingANewCell) {
             CRCell * cell = [self.neoplasm cellAtPoint:glvector];
             CRFoodSource * foodSource = [self.whiteTissue foodSourceAtPoint:glvector];
-            if (cell) {
-                //create new node
-                [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
-            } else if (foodSource) {
+            if (foodSource) {
                 //connect to new foodcell and create new node
                 CRCell * newCell = [self.neoplasm newNeighborToCell:self.activeCell atLocation:foodSource.position];
                 [self.neoplasm addFoodSouce:foodSource toCell:newCell];
+            } else if (cell) {
+                //create new node
+                [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
             } else {
                 //just create a new node
                 [self.neoplasm newNeighborToCell:self.activeCell atLocation:glvector];
@@ -324,7 +294,7 @@ float _scaleForNextUpdate;
     
     //apply friction to velocity of view
     if (GLKVector2Length(self.positionVelocity) > 0.01) {
-        self.positionVelocity = GLKVector2MultiplyScalar(self.positionVelocity, 0.9);
+        self.positionVelocity = GLKVector2MultiplyScalar(self.positionVelocity, 0.7);
     } else {
         self.positionVelocity = GLKVector2Make(0, 0);
     }

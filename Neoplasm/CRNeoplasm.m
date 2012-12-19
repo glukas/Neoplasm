@@ -115,11 +115,6 @@
     self.foodDistributionCenterNeedsUpdate = YES;
 }
 
-/*
-- (CRFood*)foodForCell:(CRCell *)cell
-{
-    return [self.foodDistributionCenter foodForCell:cell];
-}*/
 
 - (void)willRemoveChild:(CRNode *)child
 {
