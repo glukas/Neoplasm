@@ -17,6 +17,7 @@
 
 @protocol CRCellDelegate <NSObject>
 - (CRFood*)foodForCell:(CRCell*)cell;
+- (void)foodSourceForCellChanged:(CRCell*)cell;
 @end
 
 

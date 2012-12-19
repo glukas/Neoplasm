@@ -51,6 +51,7 @@
         [self enumerateParentsUsingBlock:^(CRNode *obj, BOOL *stop) {
             [obj removeChild:self];
         }];
+        self.consumer.foodSource = nil;
         NSLog(@"%@ depleted", self);
     }
 }

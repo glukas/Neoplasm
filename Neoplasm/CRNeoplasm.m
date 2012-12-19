@@ -16,6 +16,7 @@
 @interface  CRNeoplasm()
 @property (nonatomic, strong) NSMutableSet * cells;
 @property (nonatomic, strong) CRFoodDistributionCenter * foodDistributionCenter;
+@property (nonatomic) BOOL foodDistributionCenterNeedsUpdate;
 @end
 
 @implementation CRNeoplasm
@@ -73,13 +74,14 @@
 {
     CRCell * cell = [CRCell cellWithEffect:self.effect];
     
-    cell.delegate = self;
+    cell.delegate = self.foodDistributionCenter;
     cell.position = location;
     cell.pulsate = YES;
     
     [self addChild:cell];
     [self.cells addObject:cell];
     [self.foodDistributionCenter addCell:cell];
+    self.foodDistributionCenterNeedsUpdate = YES;
     return cell;
 }
 
@@ -110,27 +112,32 @@
 {
     cell.foodSource = food;
     food.consumer = cell;
-    [self.foodDistributionCenter addCell:cell];
+    self.foodDistributionCenterNeedsUpdate = YES;
 }
 
+/*
 - (CRFood*)foodForCell:(CRCell *)cell
 {
     return [self.foodDistributionCenter foodForCell:cell];
-}
+}*/
 
 - (void)willRemoveChild:(CRNode *)child
 {
     if ([child isKindOfClass:[CRCell class]]) {
         [self.cells removeObject:child];
         [self.foodDistributionCenter removeCell:(CRCell*)child];
-        //later: update foodDistributionCenter
     }
+    self.foodDistributionCenterNeedsUpdate = YES;
 }
 
 - (void)update:(float)timeSinceLastUpdate
 {
-    //[self.foodDistributionCenter update:timeSinceLastUpdate];
     [super update:timeSinceLastUpdate];
+    
+    if (self.foodDistributionCenterNeedsUpdate) {
+        [self.foodDistributionCenter update];
+        self.foodDistributionCenterNeedsUpdate = NO;
+    }
 }
 
 @end

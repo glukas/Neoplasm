@@ -13,13 +13,12 @@
 #import "CRFood.h"
 #import "CRCell.h"
 
-@interface CRFoodDistributionCenter : NSObject
+@interface CRFoodDistributionCenter : NSObject <CRCellDelegate>
 
 - (void)addCell:(CRCell*)cell;
 
 - (void)removeCell:(CRCell*)cell;
 
-//food per second for this cell
-- (CRFood*)foodForCell:(CRCell*)cell;
+- (void)update;
 
 @end

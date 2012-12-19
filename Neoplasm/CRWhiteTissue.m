@@ -67,12 +67,14 @@
     
     //test for collision
     [self enumerateChildrenUsingBlock:^(id obj, BOOL *stop) {
-        CRFoodSource * source = obj;
-        box = source.boundingBox;
+        if ([obj isKindOfClass:[CRFoodSource class]]) {
+            CRFoodSource * source = obj;
+            box = source.boundingBox;
         
-        if (CGRectIntersectsRect(box, locationBox)) {
-            *stop = YES;
-            result = source;
+            if (CGRectIntersectsRect(box, locationBox)) {
+                *stop = YES;
+                result = source;
+            }
         }
     }];
     
@@ -83,12 +85,10 @@
 {
     CRFoodSource * cell = [[CRFoodSource alloc] initWithEffect:self.effect capacity:[[CRFoodSourceCapacity alloc] initWithAmount:120+drand48()*30]];
     
-    //cell.delegate = self;
     cell.position = location;
-    //cell.pulsate = YES;
     
     [self addChild:cell];
-    [self.cells addObject:cell];
+    //[self.cells addObject:cell];
     
     return cell;
 }
@@ -102,7 +102,7 @@
 - (void)willRemoveChild:(CRNode *)child
 {
     if ([child isKindOfClass:[CRFoodSource class]]) {
-        [self.cells removeObject:child];
+        //[self.cells removeObject:child];
     }
 }
 

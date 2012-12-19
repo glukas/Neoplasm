@@ -71,7 +71,7 @@
     } else if (cell == self.cell2) {
         result = self.cell1;
     }
-    NSLog(@"%@", result);
+    //NSLog(@"%@", result);
     return result;
 }
 
@@ -97,6 +97,7 @@
     newVertices.tl.spaceCoordinate = CGPointMake(p3.x, p3.y);
     newVertices.tr.spaceCoordinate = CGPointMake(p4.x, p4.y);
     
+    //black
     newVertices.bl.Color[0] = 0;
     newVertices.br.Color[0] = 0;
     newVertices.tr.Color[0] = 0;
@@ -105,6 +106,10 @@
     newVertices.br.Color[1] = 0;
     newVertices.tr.Color[1] = 0;
     newVertices.tl.Color[1] = 0;
+    newVertices.bl.Color[2] = 0;
+    newVertices.br.Color[2] = 0;
+    newVertices.tr.Color[2] = 0;
+    newVertices.tl.Color[2] = 0;
     self.vertices = newVertices;
     
 }

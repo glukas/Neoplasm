@@ -12,7 +12,7 @@
 
 @interface CRWhiteTissue : CRRenderedNode <CRSpawnerDelegate>
 
-
+//returns the food source located at 'location'
 - (CRFoodSource*)foodSourceAtPoint:(GLKVector2)location;
 
 

@@ -10,7 +10,7 @@
 #import "CRCell.h"
 #import "CRFoodSource.h"
 
-@interface CRNeoplasm : CRRenderedNode <CRCellDelegate>
+@interface CRNeoplasm : CRRenderedNode
 
 + (CRNeoplasm *)neoplasmWithEffect:(GLKBaseEffect*)effect initialCellAtPoint:(GLKVector2)location;
 

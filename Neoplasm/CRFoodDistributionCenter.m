@@ -28,17 +28,11 @@
 
 - (CRFood *)totalFood
 {
-    /*
+    
     if (!_totalFood) {
         _totalFood = [CRFood foodWithAmount:0];
-    }*/
-    float totalFood = 0;
-    for (CRCell *cell in self.cells) {
-        if (cell.foodSource) {
-            totalFood += [cell.foodSource foodProduced].amount;
-        }
     }
-    return [CRFood foodWithAmount:totalFood];
+    return _totalFood;
 }
 
 - (void)addCell:(CRCell *)cell
@@ -74,6 +68,22 @@
     }
     //NSLog(@"%f", result.amount);
     return result;
+}
+
+- (void)foodSourceForCellChanged:(CRCell *)cell
+{
+    [self update];
+}
+
+- (void)update
+{
+    float totalFood = 0;
+    for (CRCell *cell in self.cells) {
+        if (cell.foodSource) {
+            totalFood += [cell.foodSource foodProduced].amount;
+        }
+    }
+    self.totalFood = [CRFood foodWithAmount:totalFood];
 }
 
 

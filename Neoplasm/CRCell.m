@@ -30,6 +30,13 @@
     } return _vessels;
 }
 
+- (void)setFoodSource:(CRFoodSource *)foodSource
+{
+    if (foodSource != _foodSource) {
+        _foodSource = foodSource;
+        [self.delegate foodSourceForCellChanged:self];
+    }
+}
 
 - (id)initWithEffect:(GLKBaseEffect *)effect
 {
