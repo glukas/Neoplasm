@@ -44,6 +44,7 @@
 //The Food source directly associated with this cell
 @property (nonatomic, weak) CRFoodSource * foodSource;
 
+@property (nonatomic)float strength; //value from 0 to 1, if 0, the cell dies
 
 #pragma mark connections to other cells
 

@@ -75,6 +75,11 @@
     return result;
 }
 
+
+- (float) length
+{
+    return GLKVector2Distance(self.startPoint, self.endPoint);
+}
 - (void)recalculateVertices
 {
     

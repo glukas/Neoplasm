@@ -25,4 +25,7 @@
 //nil if none
 @property (nonatomic, weak) CRCell * consumer;
 
+
+@property (readonly) float strength;
+
 @end

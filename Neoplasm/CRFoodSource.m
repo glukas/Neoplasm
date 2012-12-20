@@ -9,6 +9,8 @@
 #import "CRFoodSource.h"
 #import "CRPulse.h"
 
+const float _capactiy_strength_scaling = 0.0015;
+
 @interface CRFoodSource()
 @property (nonatomic, strong) CRFoodSourceCapacity * capacity;
 @property (nonatomic, strong) CRPulse * pulse;
@@ -28,6 +30,11 @@
         _pulse = [CRPulse pulseWithBPM:20];
         _depletionRate = 4;
     } return self;
+}
+
+- (float)strength
+{
+    return self.capacity.amount*_capactiy_strength_scaling;
 }
 
 
@@ -64,7 +71,7 @@
     if (self.consumer) {
         [self deplete:timeSinceLastUpdate];
     }
-    self.scale = 0.001+self.capacity.amount * 0.0015 * (0.93+self.pulse.pulse);
+    self.scale = 0.001+self.capacity.amount * _capactiy_strength_scaling * (0.93+self.pulse.pulse);
 }
 
 @end

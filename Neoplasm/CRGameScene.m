@@ -31,7 +31,10 @@ float _minScale = 0.08;
 @property (readonly) BOOL userIsCreatingANewCell;
 @property (nonatomic) CRCell * activeCell; //(creating a new cell next to it)
 
+@property (nonatomic) float savedStrengthOfActiveCell;
+
 @property (nonatomic, strong) CRVessel * activeVessel; //a vessel node used as visual feedback for node creation
+
 @end
 
 @implementation CRGameScene
@@ -58,6 +61,11 @@ float _scaleForNextUpdate;
     [scene.whiteTissue.foodSpawner spawnLocations:30];
     
     scene.neoplasm = [CRNeoplasm neoplasmWithEffect:effect initialCellAtPoint:GLKVector2Make(100, 200)];
+    [scene.neoplasm enumerateChildrenUsingBlock:^(CRNode *obj, BOOL *stop) {
+        if ([obj isKindOfClass:[CRCell class]]) {
+            [(CRCell *)obj setStrength:0.8];
+        }
+    }];
     [scene addChild:scene.whiteTissue];
     [scene addChild:scene.neoplasm];
 
@@ -217,6 +225,7 @@ float _scaleForNextUpdate;
             //indicate creation state to user
             cell.pulsate = NO;
             self.activeCell = cell;
+            self.savedStrengthOfActiveCell = self.activeCell.strength;
             
             self.activeVessel = [[CRVessel alloc] initWithEffect:self.effect];
             [self addChild:self.activeVessel];
@@ -230,18 +239,40 @@ float _scaleForNextUpdate;
         if (self.userIsCreatingANewCell) {
             CRCell * cell = [self.neoplasm cellAtPoint:glvector];
             CRFoodSource * foodSource = [self.whiteTissue foodSourceAtPoint:glvector];
+            //how much does it cost to create new vessels
+            
+            float cost;
+            
+            //reset in case no new cell or vessel is created
+            self.activeCell.strength = self.savedStrengthOfActiveCell;
+            
+            
             if (foodSource) {
                 //connect to new foodcell and create new node
-                CRCell * newCell = [self.neoplasm newNeighborToCell:self.activeCell atLocation:foodSource.position];
-                [self.neoplasm addFoodSouce:foodSource toCell:newCell];
+                cost = [self costOfVesselBetweenPosition:self.activeCell.position andPosition:foodSource.position];
+                if (self.savedStrengthOfActiveCell > cost) {
+                    CRCell * newCell = [self.neoplasm newNeighborToCell:self.activeCell atLocation:foodSource.position];
+                    [self.neoplasm addFoodSouce:foodSource toCell:newCell];
+                    self.activeCell.strength = self.savedStrengthOfActiveCell - cost;
+                } 
+                
             } else if (cell) {
-                //create new node
-                [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
+                //create new vessel
+                cost = [self costOfVesselBetweenPosition:cell.position andPosition:self.activeCell.position];
+                if (self.savedStrengthOfActiveCell > cost) {
+                    [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
+                    self.activeCell.strength = self.savedStrengthOfActiveCell - cost;
+                }
+                
             } else {
                 //just create a new node
-                [self.neoplasm newNeighborToCell:self.activeCell atLocation:glvector];
+                cost = [self costOfVesselBetweenPosition:glvector andPosition:self.activeCell.position];
+                if (self.savedStrengthOfActiveCell > cost) {
+                    [self.neoplasm newNeighborToCell:self.activeCell atLocation:glvector];
+                    self.activeCell.strength = self.savedStrengthOfActiveCell - cost;
+                }
             }
-            
+
             
             //reset state
             if (self.activeVessel) {
@@ -254,6 +285,14 @@ float _scaleForNextUpdate;
         }
         
     }
+}
+
+- (float)costOfVesselBetweenPosition:(GLKVector2)position1 andPosition:(GLKVector2)position2
+{
+    float strength_loss_per_unit_distance = 0.001;
+    float distance = GLKVector2Distance(position1, position2);
+    NSLog(@"distance: %f", distance);
+    return distance*strength_loss_per_unit_distance;
 }
 
 - (void)handlePinch:(UIPinchGestureRecognizer*)gesture
@@ -279,7 +318,17 @@ float _scaleForNextUpdate;
         //if creating a new cell, update position of vessel used for feedback
         CGPoint touchLocation = [self.pressGesture locationInView:self.view];
         GLKVector2 glvector = [self toGLVectorFromMainView:touchLocation];
-        self.activeVessel.endPoint = glvector;
+        
+        //creating vessels costs strength, indicate to user how much strength would be used by creating the new connection
+        float currentCost = [self costOfVesselBetweenPosition:self.activeCell.position andPosition:glvector];
+        if (currentCost < self.savedStrengthOfActiveCell) {
+            self.activeVessel.endPoint = glvector;
+            self.activeCell.strength = self.savedStrengthOfActiveCell-currentCost;
+        } else {
+            //only show the vessel as long as the user could potentially create it
+            GLKVector2 direction = GLKVector2Normalize(GLKVector2Subtract(glvector, self.activeVessel.startPoint));
+            self.activeVessel.endPoint = GLKVector2Add(self.activeVessel.startPoint, GLKVector2MultiplyScalar(direction, self.activeVessel.length));
+        }
     }
     
     [super update:timeSinceLastUpdate];

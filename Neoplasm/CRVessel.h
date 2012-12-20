@@ -22,6 +22,8 @@
 @property (nonatomic, weak) CRCell * cell1;
 @property (nonatomic, weak) CRCell * cell2;
 
+@property (readonly) float length;
+
 //return the cell not equal to 'cell', nil if there is no other cell or 'cell' is not assigned to this vessel
 - (CRCell*)otherCell:(CRCell*)cell;
 

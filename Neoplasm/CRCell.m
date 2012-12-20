@@ -9,13 +9,13 @@
 #import "CRCell.h"
 #import "CRPulse.h"
 
+#define CR_CELL_MIN_SCALE 0.15
+
 @interface  CRCell()
 
 @property (nonatomic, strong) CRPulse * pulse;
 
 @property (nonatomic, strong) NSMutableSet * vessels;
-
-@property (nonatomic) float strength;//from 0 to 1
 
 @property (nonatomic, strong) CRFood * consumption;
 
@@ -42,7 +42,7 @@
 {
     self = [super initWithFile:@"cancer.png" effect:effect];
     if (self) {
-        _strength = 0.5;
+        _strength = 0.1;
         _consumption = [CRFood foodWithAmount:1];
     } return self;
     
@@ -144,12 +144,12 @@
     if (self.strength > 1) {
         self.strength = 1;
     }
-    if (self.strength <= 0.15) {
+    if (self.strength <= 0) {
         [self enumerateParentsUsingBlock:^(CRNode *obj, BOOL *stop) {
             [obj removeChild:self];
         }];
     } else {
-        self.scale = (self.strength + self.strength*self.pulse.pulse)/2;
+        self.scale = CR_CELL_MIN_SCALE+(1-CR_CELL_MIN_SCALE)*(self.strength + self.strength*self.pulse.pulse)/2;
     }
     
 }
