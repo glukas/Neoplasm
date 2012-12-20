@@ -130,8 +130,10 @@
 
 - (void)addChild:(CRNode *)child
 {
-    [child.parents addObject:self];
-    [self.children addObject:child];
+    if (child) {
+        [child.parents addObject:self];
+        [self.children addObject:child];
+    }
 }
 
 - (void)removeChild:(CRNode *)child

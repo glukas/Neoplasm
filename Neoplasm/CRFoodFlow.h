@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) CRFoodSource * foodSource;
 
+
 - (float)shareOfTotalFoodForCell:(CRCell*)cell;
 
 @end

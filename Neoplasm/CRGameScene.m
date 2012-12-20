@@ -214,38 +214,29 @@ float _scaleForNextUpdate;
 //press is activated after Min_duration_for_node_creation
 - (void)handlePress:(UILongPressGestureRecognizer*)recognizer
 {
+    //reset position velocity
+    self.positionVelocity = GLKVector2Make(0, 0);
+    
     //get the location of the touch both in screen and world coordinates
     CGPoint touchLocation = [recognizer locationInView:recognizer.view];
-    GLKVector2 glvector = [self toGLVectorFromMainView:touchLocation];
-    self.positionVelocity = GLKVector2Make(0, 0);
+    GLKVector2 touchInWorldCoordinates = [self toSceneCoordinatesFromMainView:touchLocation];
+    CRCell *touchedCell = [self.neoplasm cellAtPoint:touchInWorldCoordinates];
+    
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         //if the user presses a cell, start creating a new child cell
-        CRCell * cell = [self.neoplasm cellAtPoint:glvector];
-        if (cell) {
-            //indicate creation state to user
-            cell.pulsate = NO;
-            self.activeCell = cell;
-            self.savedStrengthOfActiveCell = self.activeCell.strength;
-            
-            self.activeVessel = [[CRVessel alloc] initWithEffect:self.effect];
-            [self addChild:self.activeVessel];
-            self.activeVessel.startPoint = cell.position;
-            self.activeVessel.endPoint = cell.position;
-            [self moveToBottom:self.activeVessel];
+        if (touchedCell) {
+            //indicate creation state to user:
+            [self startCreatingFromCell:touchedCell];
         }
         
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {
         //for the moment, just always assume that the user doesn't want to cancel the operation
         if (self.userIsCreatingANewCell) {
-            CRCell * cell = [self.neoplasm cellAtPoint:glvector];
-            CRFoodSource * foodSource = [self.whiteTissue foodSourceAtPoint:glvector];
+
+            CRFoodSource * foodSource = [self.whiteTissue foodSourceAtPoint:touchInWorldCoordinates];
             //how much does it cost to create new vessels
             
-            float cost;
-            
-            //reset in case no new cell or vessel is created
-            self.activeCell.strength = self.savedStrengthOfActiveCell;
-            
+            float cost = 0;
             
             if (foodSource) {
                 //connect to new foodcell and create new node
@@ -253,47 +244,55 @@ float _scaleForNextUpdate;
                 if (self.savedStrengthOfActiveCell > cost) {
                     CRCell * newCell = [self.neoplasm newNeighborToCell:self.activeCell atLocation:foodSource.position];
                     [self.neoplasm addFoodSouce:foodSource toCell:newCell];
-                    self.activeCell.strength = self.savedStrengthOfActiveCell - cost;
                 } 
                 
-            } else if (cell) {
+            } else if (touchedCell) {
                 //create new vessel
-                cost = [self costOfVesselBetweenPosition:cell.position andPosition:self.activeCell.position];
+                cost = [self costOfVesselBetweenPosition:self.activeCell.position andPosition:touchedCell.position];
                 if (self.savedStrengthOfActiveCell > cost) {
-                    [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:cell];
-                    self.activeCell.strength = self.savedStrengthOfActiveCell - cost;
+                    [self.neoplasm newVesselBetweenCell:self.activeCell andOtherCell:touchedCell];
                 }
                 
             } else {
                 //just create a new node
-                cost = [self costOfVesselBetweenPosition:glvector andPosition:self.activeCell.position];
+                cost = [self costOfVesselBetweenPosition:self.activeCell.position andPosition:touchInWorldCoordinates];
                 if (self.savedStrengthOfActiveCell > cost) {
-                    [self.neoplasm newNeighborToCell:self.activeCell atLocation:glvector];
-                    self.activeCell.strength = self.savedStrengthOfActiveCell - cost;
+                    [self.neoplasm newNeighborToCell:self.activeCell atLocation:touchInWorldCoordinates];
                 }
             }
-
+            
             
             //reset state
-            if (self.activeVessel) {
-                [self removeChild:self.activeVessel];
-                self.activeVessel = nil;
-            }
-            
-            self.activeCell.pulsate = YES;
-            self.activeCell = nil;
+            [self endCreatingWithCost:cost];
         }
         
     }
 }
 
-- (float)costOfVesselBetweenPosition:(GLKVector2)position1 andPosition:(GLKVector2)position2
+- (void)startCreatingFromCell:(CRCell*)cell
 {
-    float strength_loss_per_unit_distance = 0.001;
-    float distance = GLKVector2Distance(position1, position2);
-    NSLog(@"distance: %f", distance);
-    return distance*strength_loss_per_unit_distance;
+    touchedCell.pulsate = NO;
+    self.activeCell = touchedCell;
+    self.savedStrengthOfActiveCell = self.activeCell.strength;
+    
+    self.activeVessel = [[CRVessel alloc] initWithEffect:self.effect];
+    self.activeVessel.startPoint = touchedCell.position;
+    self.activeVessel.endPoint = touchedCell.position;
+    [self addChild:self.activeVessel];
+    [self moveToBottom:self.activeVessel];
 }
+
+- (void)endCreatingWithCost:(float)cost
+{
+    self.activeCell.strength = self.savedStrengthOfActiveCell - cost;
+    
+    self.activeCell.pulsate = YES;
+    self.activeCell = nil;
+    
+    [self removeChild:self.activeVessel];
+    self.activeVessel = nil;
+}
+
 
 - (void)handlePinch:(UIPinchGestureRecognizer*)gesture
 {
@@ -310,6 +309,8 @@ float _scaleForNextUpdate;
     }
 }
 
+
+
 #pragma mark update
 
 - (void)update:(float)timeSinceLastUpdate
@@ -317,7 +318,7 @@ float _scaleForNextUpdate;
     if (self.activeVessel) {
         //if creating a new cell, update position of vessel used for feedback
         CGPoint touchLocation = [self.pressGesture locationInView:self.view];
-        GLKVector2 glvector = [self toGLVectorFromMainView:touchLocation];
+        GLKVector2 glvector = [self toSceneCoordinatesFromMainView:touchLocation];
         
         //creating vessels costs strength, indicate to user how much strength would be used by creating the new connection
         float currentCost = [self costOfVesselBetweenPosition:self.activeCell.position andPosition:glvector];
@@ -334,8 +335,9 @@ float _scaleForNextUpdate;
     [super update:timeSinceLastUpdate];
     
     
-    //update color of background
     [self.pulse update:timeSinceLastUpdate];
+    
+    //update color of background
     rgbColor bg;
     bg.b = 0.1;
     bg.r = 0.75+0.15*self.pulse.pulse;
@@ -343,20 +345,28 @@ float _scaleForNextUpdate;
     
     //apply friction to velocity of view
     if (GLKVector2Length(self.positionVelocity) > 0.01) {
-        self.positionVelocity = GLKVector2MultiplyScalar(self.positionVelocity, 0.7);
+        self.positionVelocity = GLKVector2MultiplyScalar(self.positionVelocity, powf(2, -10*timeSinceLastUpdate));
     } else {
         self.positionVelocity = GLKVector2Make(0, 0);
     }
 
 }
 
+#pragma mark private helpers
 
+- (float)costOfVesselBetweenPosition:(GLKVector2)position1 andPosition:(GLKVector2)position2
+{
+    float strength_loss_per_unit_distance = 0.001;
+    float distance = GLKVector2Distance(position1, position2);
+    //NSLog(@"distance: %f", distance);
+    return distance*strength_loss_per_unit_distance;
+}
 
 //maybe factor out into CRNode Class or at least CRScene Class
 
 //this method transforms a point in screen coordinates (eg as given by the uiview) into geometry space coordinates ('world coordinates')
 //this is useful for determining the location of a touch with respect to objects in the scene
-- (GLKVector2)toGLVectorFromMainView:(CGPoint)point
+- (GLKVector2)toSceneCoordinatesFromMainView:(CGPoint)point
 {
 
     GLKVector4 gl4vector =  GLKVector4Make(point.x, self.view.frame.size.width - point.y, 0, 1);

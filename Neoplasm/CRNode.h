@@ -25,8 +25,10 @@
 
 
 //modify the hierarchy
+//does nothing if child is nil
 - (void)addChild:(CRNode *)child;
 
+//does nothing if child is nil
 - (void)removeChild:(CRNode *)child;
 
 - (void)moveToTop:(CRNode*)child;
